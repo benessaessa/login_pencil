@@ -1,0 +1,131 @@
+header{
+    box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
+    padding: 15px;
+}
+/* ================================================== */
+.content h4{
+    color: #4B4B4B;
+    font-size: 30px;
+}
+.content label{
+    font-size: 16px;
+    font-weight: bold;
+}
+.content .form-control{
+    width: 90%;
+    height: 44px;
+}
+.formLogIn .input-group{
+    width: 90%;
+}
+.formLogIn .input-group .input-group-prepend .fa{
+    color: #E78C03;
+}
+.content .password{
+    width: 60% !important;
+}
+.login{
+    box-shadow: 2px 2px 2px 2px rgb(243, 231, 231);
+    padding: 15px;
+}
+.login h6{
+    font-size: 19px;
+}
+.btnLogin{
+    background-color: #E78C03;
+    color: white;
+    border-radius: 20px;
+    width: 50%;
+    font-size: 18px;
+}
+.forget{
+    color: black;
+}
+.btnLogin2{
+    background-color: #E78C03;
+    color: white;
+    border-radius: 20px;
+    width: 50%;
+    font-size: 18px;
+}
+.logPhoto img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.logPhoto p{
+    font-size: 20px;
+    color: black;
+}
+.check{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check input:checked ~ .checkmark {
+    background-color: #E78C03;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.list-inline .list-inline-item a{
+    color: white;
+}
+footer{
+    background-color: black;
+}
