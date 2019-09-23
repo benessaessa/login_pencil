@@ -179,7 +179,7 @@ footer{
   }
   
   /* Create a custom radio button */
-  .checkmark {
+  .checkmarks {
     position: absolute;
     top: 0;
     margin-top: 2px;
@@ -192,29 +192,29 @@ footer{
   }
   
   /* On mouse-over, add a grey background color */
-  .customRadio:hover input ~ .checkmark {
+  .customRadio:hover input ~ .checkmarks {
     background-color: orange;
   }
   
   /* When the radio button is checked, add a blue background */
-  .customRadio input:checked ~ .checkmark {
+  .customRadio input:checked ~ .checkmarks {
     background-color: white;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
+  .checkmarks:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the indicator (dot/circle) when checked */
-  .customRadio input:checked ~ .checkmark:after {
+  .customRadio input:checked ~ .checkmarks:after {
     display: block;
   }
   
   /* Style the indicator (dot/circle) */
-  .customRadio .checkmark:after {
+  .customRadio .checkmarks:after {
     top: 4px;
     left: 4px;
     width: 17px;
