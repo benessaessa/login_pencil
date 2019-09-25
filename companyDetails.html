@@ -43,11 +43,11 @@
             <div class="container">
                 <div class="tabButton">
                     <ul class="nav nav-pills text-white bg-dark flex-column flex-md-row nav-justified">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#companyDetails">Company Details</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#addDetail">Bank Account</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#">Activities</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#branches"> Branches </a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#uploadDocuments">Upload Documents</a></li>
+                        <li class="nav-item border-right"><a class="nav-link active" data-toggle="pill" href="#companyDetails">Company Details</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#addDetail">Bank Account</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#">Activities</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#branches"> Branches </a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#uploadDocuments">Upload Documents</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#submitData">Submit Your Data </a></li>
                     </ul>
                 </div>
@@ -79,6 +79,8 @@
                                         <label>Country</label>
                                         <select class="form-control">
                                             <option><a href="#">Egypt</a></option>
+                                            <option><a href="#">Tunis</a></option>
+                                            <option><a href="#">England</a></option>
                                         </select>
                                     </div>
                                 </div>
@@ -209,7 +211,9 @@
                         <h2 class="text-center mb-3 pt-4">Compnay Bank Details</h2><br>
                         <div class="addDetails p-5">
                             <div class="row">
-                                <div class="col-1"></div>
+                                <div class="col-1 ordList">
+                                    <p>1.</p>
+                                </div>
                                 <div class="col-lg-5 col-md-5 ">
                                     <div class="form-group">
                                         <label>Name</label>
@@ -255,6 +259,56 @@
                             </div>
                                
                         </div>
+                        <div class="addDetails p-5 mt-4">
+                                <div class="row">
+                                    <div class="col-1 ordList">
+                                        <p>2.</p>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 ">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="Add your company bank"
+                                                aria-describedby="helpId">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 ">
+                                        <div class="form-group">
+                                            <label>Abbreviation</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="e.g CIB"
+                                                aria-describedby="helpId">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-lg-5 col-md-5 ">
+                                        <div class="form-group">
+                                            <label>SWIFT Code</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="Add your bank swift code"
+                                                aria-describedby="helpId">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 ">
+                                        <div class="form-group">
+                                            <label>Account Number</label>
+                                            <input type="tel" name="" id="" class="form-control" placeholder="Add your account number"
+                                                aria-describedby="helpId">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-lg-5 col-md-5 ">
+                                        <div class="form-group">
+                                            <label>Country</label>
+                                            <select class="form-control">
+                                                <option selected><a href="#">Select a country</a></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                   
+                            </div>
                         <div class="addDetails p-4 mt-4" >
                             <div class="row">
                                 <div class="col-lg-1"></div>
@@ -271,7 +325,67 @@
                         <h2 class="text-center mb-3 pt-4">Add your company branches</h2><br>
                         <div class="addDetails p-5">
                             <div class="row">
+                                <div class="col-1 ordList">
+                                    <p>1.</p>
+                                </div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="Add the name"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="Add your address"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-1"></div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select class="form-control">
+                                            <option selected><a href="#">Egypt</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <select class="form-control">
+                                            <option selected><a href="#">Cairo</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Email Address</label>
+                                        <input type="email" name="" id="" class="form-control" placeholder="Add the email"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Fax</label>
+                                        <input type="tel" name="" id="" class="form-control" placeholder="Add the fax"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                            </div>
+                               
+                        </div> 
+                        <div class="addDetails p-5 mt-4">
+                            <div class="row">
+                                <div class="col-1 ordList">
+                                    <p>2.</p>
+                                </div>
                                 <div class="col-lg-5 col-md-5 ">
                                     <div class="form-group">
                                         <label>Name</label>
@@ -325,7 +439,7 @@
                             </div>
                                
                         </div>
-                        <div class="addDetails p-4 mt-4" >
+                        <div class="addDetails p-4 mt-4">
                             <div class="row">
                                 <div class="col-lg-1"></div>
                                 <div class="col-lg-7 linkAdd">
@@ -389,17 +503,25 @@
                     </div>
                     <div id="submitData" class="tab-pane">
                         <h2 class="text-center mb-3 pt-4">Submit Your Data</h2><br>
-                        <div class="submitData p-5">
+                        <div class="submitData pt-5 pb-5">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-1"></div>
                                     <div class="col-lg-10">
-                                        <p class="text-center">Check all your data again and make sure it's all correct. 
+                                        <p class="text-center font-weight-bold">Check all your data again and make sure it's all correct. 
                                             After submitting, you won't be able to change any data 
-                                            til you get a response from us.</p>
+                                            til you get a response from us.
+                                        </p><br>
+                                        <p class="text-center">By entering authentication information, you are submitted to Arab Petroleum Pipelines Co. SUMED information system. This system is for the use of authorized users only.
+                                        </p><br>
+                                        <p class="text-center">System usage may be monitored, recorded, and subject to audit. By accessing this system, you are consenting to having your activities to be monitored, recorded, and made available to auditors or law enforcement officials.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="container pt-4">
+                            <p class="text-center"><button class="btn btnSubmitData">Submit Your Account</button></p>
                         </div>
                     </div>
                 </div>
