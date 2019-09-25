@@ -9,11 +9,11 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Company Details</title>
     </head>
-    <body data-spy="scroll" data-target=".list-group" data-offset="50">
+    <body>
         <header class="pt-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8  col-sm-8 col-7">
+                    <div class="col-lg-8  col-sm-8 col-6">
                         <img src="images/sumed.png">
                     </div>
                     <div class="col-lg-2 pt-3 col-2">
@@ -42,13 +42,13 @@
         <div class="details">
             <div class="container">
                 <div class="tabButton">
-                    <ul class="nav nav-pills text-white bg-dark nav-justified">
+                    <ul class="nav nav-pills text-white bg-dark flex-column flex-md-row nav-justified">
                         <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#companyDetails">Company Details</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#addDetail">Bank Account</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#">Activities</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#"> Branches </a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#">Upload Documents</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#">Submit Your Data </a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#branches"> Branches </a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#uploadDocuments">Upload Documents</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#submitData">Submit Your Data </a></li>
                     </ul>
                 </div>
                 <div class="tab-content">
@@ -255,75 +255,152 @@
                             </div>
                                
                         </div>
-                        <div class="addDetails p-4 mt-4" id="addDetails">
+                        <div class="addDetails p-4 mt-4" >
                             <div class="row">
                                 <div class="col-lg-1"></div>
                                 <div class="col-lg-7 linkAdd">
-                                    <a href="#willShow" class="btnClickAddAccount"><i class="fa fa-plus-circle"></i> &nbsp; Add more accounts</a>
+                                    <button class="btnClickAddAccount border-0 bg-white"><i class="fa fa-plus-circle"></i> &nbsp; Add more accounts</button>
                                 </div>
                             </div>
                             
                         </div><br>
-                        <div class="willShow" id="willShow">
-                            <div class="addDetails p-5">
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-lg-5 col-md-5 ">
-                                        <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text" name="" id="" class="form-control" placeholder="Add your company bank"
-                                                aria-describedby="helpId">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-5 ">
-                                        <div class="form-group">
-                                            <label>Abbreviation</label>
-                                            <input type="text" name="" id="" class="form-control" placeholder="e.g CIB"
-                                                aria-describedby="helpId">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-lg-5 col-md-5 ">
-                                        <div class="form-group">
-                                            <label>SWIFT Code</label>
-                                            <input type="text" name="" id="" class="form-control" placeholder="Add your bank swift code"
-                                                aria-describedby="helpId">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-5 ">
-                                        <div class="form-group">
-                                            <label>Account Number</label>
-                                            <input type="tel" name="" id="" class="form-control" placeholder="Add your account number"
-                                                aria-describedby="helpId">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-lg-5 col-md-5 ">
-                                        <div class="form-group">
-                                            <label>Country</label>
-                                            <select class="form-control">
-                                                <option selected><a href="#">Select a country</a></option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                   
-                            </div>
-                            <div class="addDetails p-4 mt-4">
-                                <div class="row">
-                                    <div class="col-lg-1"></div>
-                                    <div class="col-lg-7 linkAdd">
-                                        <a class="btnClickAddAccount" href="#"><i class="fa fa-plus-circle"></i> &nbsp; Add more accounts</a>
-                                    </div>
-                                </div>
-                                
-                            </div><br>
-                        </div>
+                        
                         <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
+                    </div>
+                    <div id="branches" class="tab-pane container">
+                        <h2 class="text-center mb-3 pt-4">Add your company branches</h2><br>
+                        <div class="addDetails p-5">
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="Add the name"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Address</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="Add your address"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <select class="form-control">
+                                            <option selected><a href="#">Egypt</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <select class="form-control">
+                                            <option selected><a href="#">Cairo</a></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Email Address</label>
+                                        <input type="email" name="" id="" class="form-control" placeholder="Add the email"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 ">
+                                    <div class="form-group">
+                                        <label>Fax</label>
+                                        <input type="tel" name="" id="" class="form-control" placeholder="Add the fax"
+                                            aria-describedby="helpId">
+                                    </div>
+                                </div>
+                            </div>
+                               
+                        </div>
+                        <div class="addDetails p-4 mt-4" >
+                            <div class="row">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-7 linkAdd">
+                                    <button class="btnClickAddAccount border-0 bg-white"><i class="fa fa-plus-circle"></i> &nbsp; Add more branches</button>
+                                </div>
+                            </div>
+                            
+                        </div><br>
+                        
+                        <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
+                    </div>
+                    <div id="uploadDocuments" class="tab-pane">
+                        <h2 class="text-center mb-3 pt-4">Upload Your Company Documents</h2><br>
+                        <div class="uploadDocuments">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-lg-10">
+                                        <!--Accordion wrapper-->
+                                        <div class="accordion md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                        
+                                            <!-- Accordion card -->
+                                            <div class="card bordered firstUploadCollapse">
+                                        
+                                                <!-- Card header -->
+                                                <div class="card-header" role="tab" id="headingOne1">
+                                                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                                                        aria-controls="collapseOne1">
+                                                        <h5 class="mb-0">
+                                                            Partnership deed or memorandum of article of association 
+                                                            <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                                        </h5>
+                                                    </a>
+                                                </div>
+                                        
+                                                <!-- Card body -->
+                                                <div id="collapseOne1" class="collapse show borderd" role="tabpanel" aria-labelledby="headingOne1"
+                                                    data-parent="#accordionEx">
+                                                    <div class="card-body">
+                                                       <p class="text-center">
+                                                        It’s a set of formal documents filed with a government body 
+                                                        to legally document the creation of a corporation. Articles of incorporation must 
+                                                        contain pertinent information such as the firm's name, street address, 
+                                                        agent for service of process and the amount and type of stock to be issued.
+                                                       </p>
+                                                       <div class="box">
+
+                                                       </div>
+                                                    </div>
+                                                </div>
+                                        
+                                            </div>
+                                            <!-- Accordion card -->
+                                        
+                                        </div>
+                                        <!-- Accordion wrapper -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="submitData" class="tab-pane">
+                        <h2 class="text-center mb-3 pt-4">Submit Your Data</h2><br>
+                        <div class="submitData p-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-lg-10">
+                                        <p class="text-center">Check all your data again and make sure it's all correct. 
+                                            After submitting, you won't be able to change any data 
+                                            til you get a response from us.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

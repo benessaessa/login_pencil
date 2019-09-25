@@ -11,10 +11,13 @@ header{
 .content label,.formShadow label{
     font-size: 16px;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 .content .form-control{
     width: 90%;
     border: none;
+    font-size: 12px;
     background-color: rgb(248, 240, 240);
     height: 44px;
 }
@@ -33,7 +36,7 @@ header{
     width: 60% !important;
 }
 .login{
-    box-shadow: 2px 2px 2px 2px rgb(243, 231, 231);
+    box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
     padding: 15px;
 }
 .login h6{
@@ -150,12 +153,13 @@ footer{
   font-weight: 500;
 }
 .formShadow {
-  box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
+  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
 }
 .formShadow .form-control{
-border: none;
-background-color: rgb(248, 240, 240);
-height: 44px;
+  border: none;
+  font-size: 12px;
+  background-color: rgb(248, 240, 240);
+  height: 44px;
 }
 .formShadow .form-control:focus{
 border: 1px solid #E78C03;
@@ -169,7 +173,7 @@ box-shadow: none;
 /* ============================================ page Choose Business =================== */
 /* The customRadio */
 .chooseOption{
-  box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
+  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
 }
 .customRadio {
     margin-bottom: 0px;
@@ -276,6 +280,14 @@ box-shadow: none;
   .tabButton .nav li a:hover{
       background-color: #E78C03;
   }
+  @media screen and (max-width:600px){
+    .details .tabButton .bg-dark .li{
+      display: flex;
+      width: 100px;
+      background-color: red !important;
+      justify-content: center;
+    }
+  }
   .btnSubmit{
   background-color: #E78C03;
   color: white;
@@ -285,10 +297,11 @@ box-shadow: none;
   }
  
   .addDetails{
-  box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
+    box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
   }
   .addDetails .form-control{
   border: none;
+  font-size: 12px;
   background-color: rgb(248, 240, 240);
   height: 44px;
   }
@@ -299,10 +312,8 @@ box-shadow: none;
   }
   .addDetails label{
   font-weight: bold;
-  }
-  .bankAccount .list-group li.active{
-    background-color: #E78C03;
-    color: #fff;
+  margin: 0;
+  padding: 0;
   }
   .linkAdd a{
     color: #E78C03;
@@ -310,12 +321,47 @@ box-shadow: none;
     font-weight: 500;
     font-family: "Archivo Narrow";
   }
-  .willShow{
-    display: none;
-  }
+
   .btnClickAddAccount{
     color: #E78C03;
   }
-/* ============================================================= */
-/* ============================ Page Bank account =========== */
-
+/* ========================================= Upload Documents ====== */
+.firstUploadCollapse .card-header h5{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+}
+.firstUploadCollapse .card-header a:hover{
+  text-decoration: none;
+}
+.firstUploadCollapse .card-body{
+  border: 2px solid beige;
+  background-color: rgba(0,0,0,.03); 
+}
+.uploadDocuments{
+  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+}
+.uploadDocuments .box{
+  box-sizing: border-box;	
+  height: 275px;	
+  width: 100%;	
+  border: 2px dashed #E78C03;	
+  border-radius: 8px;	
+  background-color: #FFFFFF;
+}
+/* ================================== Submit Data ================= */
+.submitData{
+  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+}
+.submitData a{
+  color: #4B4B4B;	
+  font-size: 20px;	
+  font-weight: bold;	
+  letter-spacing: 1.11px;	
+  line-height: 27px;	
+  text-align: center;
+}
+.submitData p{
+  font-size: 20px;
+  font-weight: bold;
+}
