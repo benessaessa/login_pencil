@@ -13,17 +13,21 @@
         <header class="pt-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8  col-sm-8 col-6">
+                    <div class="col-lg-8 col-sm-8 col-7">
                         <img src="images/sumed.png">
                     </div>
-                    <div class="col-lg-2 pt-3 col-2">
-                        <p class="text-right"><a href="#"><img src="images/notifications-none.svg"></a></p>
+                    <div class="col-lg-1 pt-3 col-1">
+                        <p class="text-right"><a href="#"><img class="notification" src="images/notifications-none.svg"></a></p>
+                    </div>
+                    <div class="col-1">
+                        <div class="vl"></div>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-2 text-right pt-2">
+            
                         <div class="dropdown">
-                                <span  class="dropdown-toggle font-weight-bold" data-toggle="dropdown">
-                                    ADONC &nbsp;&nbsp;
-                                </span>
+                            <span class="dropdown-toggle font-weight-bold" data-toggle="dropdown">
+                                ADONC &nbsp;&nbsp;
+                            </span>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Link 1</a>
                                 <a class="dropdown-item" href="#">Link 2</a>
@@ -53,7 +57,7 @@
                 </div>
                 <div class="tab-content">
                     <div id="companyDetails" class="tab-pane container fade active show">
-                        <h2 class="text-center mb-3 pt-4">Add Your Company Details</h2><br>
+                        <h2 class="text-center mt-2 mb-3 pt-4">Add Your Company Details</h2><br>
                         <div class="addDetails p-5">
                             <div class="row">
                                 <div class="col-1"></div>
@@ -209,7 +213,7 @@
                     </div>
                     <div id="addDetail" class="tab-pane container">
                         <h2 class="text-center mb-3 pt-4">Compnay Bank Details</h2><br>
-                        <div class="addDetails p-5">
+                        <div class="addDetails mt-2 p-5">
                             <div class="row">
                                 <div class="col-1 ordList">
                                     <p>1.</p>
@@ -323,7 +327,7 @@
                     </div>
                     <div id="branches" class="tab-pane container">
                         <h2 class="text-center mb-3 pt-4">Add your company branches</h2><br>
-                        <div class="addDetails p-5">
+                        <div class="addDetails mt-2 p-5">
                             <div class="row">
                                 <div class="col-1 ordList">
                                     <p>1.</p>
@@ -452,7 +456,7 @@
                         <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
                     </div>
                     <div id="uploadDocuments" class="tab-pane">
-                        <h2 class="text-center mb-3 pt-4">Upload Your Company Documents</h2><br>
+                        <h2 class="text-center mt-2 mb-3 pt-4">Upload Your Company Documents</h2><br>
                         <div class="uploadDocuments">
                             <div class="container">
                                 <div class="row">
@@ -465,10 +469,10 @@
                                             <div class="card bordered firstUploadCollapse">
                                         
                                                 <!-- Card header -->
-                                                <div class="card-header" role="tab" id="headingOne1">
+                                                <div class="card-header p-3" role="tab" id="headingOne1">
                                                     <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
                                                         aria-controls="collapseOne1">
-                                                        <h5 class="mb-0">
+                                                        <h5 class="mb-2 border-bottom-0">
                                                             Partnership deed or memorandum of article of association 
                                                             <i class="float-right fas fa-angle-down rotate-icon"></i>
                                                         </h5>
@@ -476,18 +480,28 @@
                                                 </div>
                                         
                                                 <!-- Card body -->
-                                                <div id="collapseOne1" class="collapse show borderd" role="tabpanel" aria-labelledby="headingOne1"
+                                                <div id="collapseOne1" class="collapse show borderd border-top-0" role="tabpanel" aria-labelledby="headingOne1"
                                                     data-parent="#accordionEx">
                                                     <div class="card-body">
-                                                       <p class="text-center">
+                                                       <p class="text-center p-2">
                                                         It’s a set of formal documents filed with a government body 
                                                         to legally document the creation of a corporation. Articles of incorporation must 
                                                         contain pertinent information such as the firm's name, street address, 
                                                         agent for service of process and the amount and type of stock to be issued.
                                                        </p>
-                                                       <div class="box">
+                                                       <div class="output pt-2 mb-2 border text-left pl-3"></div>
+                                                       <div class="box text-center demo-droppable">
 
-                                                       </div>
+                                                            <img class="mt-5" src="images/upload.png"><br><br>
+                                                            <p class="mt-2">Drag & Drop or 
+                                                                <span class="btn-file font-weight-bold">
+                                                                Browse   <input type="file" id="file" >
+                                                                </span>
+                                                            </p>
+                                                            
+                                                            <p>We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
+                                                            
+                                                        </div>
                                                     </div>
                                                 </div>
                                         
@@ -503,7 +517,7 @@
                     </div>
                     <div id="submitData" class="tab-pane">
                         <h2 class="text-center mb-3 pt-4">Submit Your Data</h2><br>
-                        <div class="submitData pt-5 pb-5">
+                        <div class="submitData mt-2 pt-5 pb-5">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-1"></div>
@@ -541,5 +555,70 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="js/dropzone.js"></script>
+        <script type="text/javascript">
+            (function(window) {
+              function triggerCallback(e, callback) {
+                if(!callback || typeof callback !== 'function') {
+                  return;
+                }
+                var files;
+                if(e.dataTransfer) {
+                  files = e.dataTransfer.files;
+                } else if(e.target) {
+                  files = e.target.files;
+                }
+                callback.call(null, files);
+              }
+              function makeDroppable(ele, callback) {
+                var input = document.createElement('input');
+                input.setAttribute('type', 'file');
+                input.setAttribute('multiple', true);
+                input.style.display = 'none';
+                input.addEventListener('change', function(e) {
+                  triggerCallback(e, callback);
+                });
+                ele.appendChild(input);
+                
+                ele.addEventListener('dragover', function(e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  ele.classList.add('dragover');
+                });
+          
+                ele.addEventListener('dragleave', function(e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  ele.classList.remove('dragover');
+                });
+          
+                ele.addEventListener('drop', function(e) {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  ele.classList.remove('dragover');
+                  triggerCallback(e, callback);
+                });
+                
+                ele.addEventListener('click', function() {
+                  input.value = null;
+                  input.click();
+                });
+              }
+              window.makeDroppable = makeDroppable;
+            })(this);
+            (function(window) {
+              makeDroppable(window.document.querySelector('.demo-droppable'), function(files) {
+                console.log(files);
+                var output = document.querySelector('.output');
+                output.innerHTML = '';
+                for(var i=0; i<files.length; i++) {
+                  if(files[i].type.indexOf('image/') === 0) {
+                    output.innerHTML += '<img width="200" src="' + URL.createObjectURL(files[i]) + '" />';
+                  }
+                  output.innerHTML += '<p>'+files[i].name+'</p>';
+                }
+              });
+            })(this);
+        </script>     
     </body>
 </html>

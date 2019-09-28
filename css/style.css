@@ -264,6 +264,9 @@ box-shadow: none;
   font-size: 24px;
   font-weight: bold;
   }
+  .tab-content h2{
+    font-size: 30px;
+  }
   .tabButton .bg-dark{
     background-color: #000000 !important;
   }
@@ -368,9 +371,60 @@ box-shadow: none;
   border: 2px solid #c70919;
   box-shadow: 1px 1px 1px 2px rgb(243, 231, 231); 
 }
+.btn-file {
+	position: relative;
+	overflow: hidden;
+	margin-top: 5px;
+	}
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: left;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	outline: none;
+	background: white;
+	cursor: inherit;
+	display: block;
+	}
+  .accordion{
+    border: 1px solid rgb(214, 207, 207);
+    border-radius: 5px;
+  }
+  .accordion p{
+    font-size: 16px;
+  }
+  /* .dz-success-mark,.dz-error-mark,.dz-default.dz-message,.dz-size{
+    display: none;
+  } */
+ .output{
+   border-radius: 5px;
+   background-color: white;
+   color: #000000;
+ } 
 /* ================================== Submit Data ================= */
-.submitData{
+.submitData,.submitDataShow,.successfulSubmit{
   box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+}
+.successfulSubmit h2{
+  font-size: 30px;
+  font-family: "Archivo Narrow";
+  font-weight: bold;
+  letter-spacing: 1.67px;	
+  line-height: 40px;
+}
+.successfulSubmit p{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.submitDataShow p{
+  font-size: 18px;
+  color: #4B4B4B;
 }
 .submitData a{
   color: #4B4B4B;	
@@ -389,4 +443,61 @@ box-shadow: none;
   width: 250px;
   border-radius: 20px;
   font-size: 18px;
+}
+/* ================================ Page Account Setting ================*/
+.btnSaveChanges{
+  background-color: #E78C03;
+  color: white;
+  width: 250px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.notification{
+  margin-top: 2px;
+  position: absolute;
+  margin-left: 35%;
+  margin-right: 10%;
+}
+.vl{
+  float:right; 
+  border-left: 1px solid black;
+  height: 120%;
+  min-height: 100%;
+}
+/* =================================== Account Details ================ */
+.accDetails{
+  color: #AF9164;
+  font-weight: bold;
+}
+.busnessType{
+  font-size: 18px;
+}
+.note{
+ font-size: 20px;
+ font-weight: bold;
+ line-height: 27px; 
+}
+.note a{
+  color: #E78C03;
+}
+/* ========================================= Company Details View ====== */
+.compAdd label{
+  font-size: 18px;
+}
+.compAdd p{
+  font-size: 14px;
+  color: #AF9164;
+  font-weight: bold;
+}
+.txtWornDetails p{
+  font-size: 16px;
+  color: #AF9164;
+  font-weight: 500;
+}
+.pendApproval{
+  color: #000000;
+  font-size: 24px;	
+  font-weight: bold;	
+  letter-spacing: 1.33px;	
+  line-height: 32px;
 }

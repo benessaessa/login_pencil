@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>submit</title>
+    </head>
+    <body>
+        <div class="p-2" id="successForm">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <div class="successfulSubmit p-4 text-center">
+                            <img src="images/close.svg" alt="close" id="close" class="float-right"><br>
+                            <p class="text-center mt-2"><img src="images/check-circle-outline.svg"></p>
+                            <h2 class="mt-5">Your Request Submitted Successfully</h2>
+                            <p class="mt-4">You will get a notification when your account got accepted or rejected.</p>
+                            <p class="mt-4 mb-5">Please note that any changes you are going to make now, might affect out the reply to your request and cause a delay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#close').click(function(){
+                    $('#successForm').css("display","none");
+                });
+            });
+            
+        </script>
+    </body>
+</html>
