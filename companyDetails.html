@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
         <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
         <link rel="stylesheet" href="css/style.css">
         <title>Company Details</title>
     </head>
@@ -65,7 +67,7 @@
                                 <div class="col-lg-5 col-md-5 ">
                                     <div class="form-group">
                                         <label>Company Address</label>
-                                        <input type="text" name="" id="" class="form-control" placeholder="73 Ezzat Mohammed Selim Street, Almazah, Heliopolis"
+                                        <input type="text" name="" id="" class="form-control inputFieldStyle" placeholder="73 Ezzat Mohammed Selim Street, Almazah, Heliopolis"
                                             aria-describedby="helpId">
                                     </div>
                                 </div>
@@ -511,14 +513,11 @@
                                                                </div>
                                                            </div>
                                                        </div>
-                                                       <form action="/file-upload" method="post" enctype="multipart/form-data" class="dropzone p-5">
-                                                        <img src="images/upload.png">
-                                                        <p class="mt-2">Drag & Drop or click in any space to upload </p>
-                                                        <div class="fallback">
-                                                          <input name="file" type="file" multiple />
+                                                       <div class="container text-center">
+                                                        <p class="mt-2">Drag & Drop or click in the box to upload Files</p>
+                                                        <input id="thefiles" type="file" name="files" accept=".pdf" multiple>
+                                                        <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
                                                         </div>
-                                                        <p class="mt-3">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
-                                                      </form>
                                                     </div>
                                                 </div>
                                         
@@ -557,7 +556,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <!-- Footer -->
         <footer class="text-center text-white pt-4 pb-3 mt-5">
             <ul class="list-inline">
@@ -572,14 +571,35 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="js/dropzone.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
         <script type="text/javascript">
-          $(document).ready(function(){
-            $('.dz-error-mark').click(function(){
-                $('.dz-image').hide();
+            $(function() {
+                $('#thefiles').FancyFileUpload({
+                    params : {
+                        action : 'fileuploader'
+                    },
+                    maxfilesize : 1000000
+                });
             });
-          });
-        </script> 
+            </script>
+            <script type="text/javascript">
+            
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-36251023-1']);
+              _gaq.push(['_setDomainName', 'jqueryscript.net']);
+              _gaq.push(['_trackPageview']);
+            
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+            
+            </script>
   
     </body>
 </html>

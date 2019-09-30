@@ -377,15 +377,8 @@ box-shadow: none;
   border: 2px solid #c70919;
   box-shadow: 1px 1px 1px 2px rgb(243, 231, 231); 
 }
-.dropzone{
-  border:3px dashed #E78C03;text-align: center;
-}
-.dz-error-mark,.dz-error-message,.dz-size,.dz-image,.dz-progress{
-  display: none;
-}
-
-.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark{
-  top: 70%;
+.ff_fileupload_wrap .ff_fileupload_dropzone{
+  border: 2px dashed #E78C03;
 }
   .accordion{
     border: 1px solid rgb(214, 207, 207);
