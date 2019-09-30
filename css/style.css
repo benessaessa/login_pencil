@@ -352,6 +352,9 @@ box-shadow: none;
 .firstUploadCollapse .card-header a:hover{
   text-decoration: none;
 }
+.exDate .form-inline .form-group .form-control{
+  width: 175px !important;
+}
 .firstUploadCollapse .card-body{
   border: 2px solid beige;
   background-color: rgba(0,0,0,.03); 
