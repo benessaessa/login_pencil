@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
         <link rel="stylesheet" href="css/style.css">
         <title>Company Details</title>
     </head>
@@ -469,8 +470,8 @@
                                             <div class="card bordered firstUploadCollapse">
                                         
                                                 <!-- Card header -->
-                                                <div class="card-header p-3" role="tab" id="headingOne1">
-                                                    <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
+                                                <div class="card-header p-3" role="tab">
+                                                    <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseOne1" aria-expanded="true"
                                                         aria-controls="collapseOne1">
                                                         <h5 class="mb-2 border-bottom-0">
                                                             Partnership deed or memorandum of article of association 
@@ -480,7 +481,7 @@
                                                 </div>
                                         
                                                 <!-- Card body -->
-                                                <div id="collapseOne1" class="collapse show borderd border-top-0" role="tabpanel" aria-labelledby="headingOne1"
+                                                <div  class="collapse show borderd border-top-0 collapseOne1" role="tabpanel" aria-labelledby="headingOne1"
                                                     data-parent="#accordionEx">
                                                     <div class="card-body">
                                                        <p class="text-center p-2">
@@ -489,19 +490,35 @@
                                                         contain pertinent information such as the firm's name, street address, 
                                                         agent for service of process and the amount and type of stock to be issued.
                                                        </p>
-                                                       <div class="output pt-2 mb-2 border text-left pl-3"></div>
-                                                       <div class="box text-center demo-droppable">
-
-                                                            <img class="mt-5" src="images/upload.png"><br><br>
-                                                            <p class="mt-2">Drag & Drop or 
-                                                                <span class="btn-file font-weight-bold">
-                                                                Browse   <input type="file" id="file" >
-                                                                </span>
-                                                            </p>
-                                                            
-                                                            <p>We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
-                                                            
+                                                       <div class="container">
+                                                           <div class="row">
+                                                               <div class="col-lg-1"></div>
+                                                               <div class="col-lg-5 col-12">
+                                                                <form class="form-inline mb-2">
+                                                                    <div class="form-group">
+                                                                        <label class="mr-2">Start Date</label>
+                                                                        <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                    </div>
+                                                                </form>
+                                                               </div>
+                                                               <div class="col-lg-5 col-12">
+                                                                <form class="form-inline mb-2">
+                                                                    <div class="form-group">
+                                                                        <label class="mr-2">Expire date</label>
+                                                                        <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                    </div>
+                                                                </form>
+                                                               </div>
+                                                           </div>
+                                                       </div>
+                                                       <form action="/file-upload" method="post" enctype="multipart/form-data" class="dropzone p-5">
+                                                        <img src="images/upload.png">
+                                                        <p class="mt-2">Drag & Drop or click in any space to upload </p>
+                                                        <div class="fallback">
+                                                          <input name="file" type="file" multiple />
                                                         </div>
+                                                        <p class="mt-3">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
+                                                      </form>
                                                     </div>
                                                 </div>
                                         
@@ -557,68 +574,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="js/dropzone.js"></script>
         <script type="text/javascript">
-            (function(window) {
-              function triggerCallback(e, callback) {
-                if(!callback || typeof callback !== 'function') {
-                  return;
-                }
-                var files;
-                if(e.dataTransfer) {
-                  files = e.dataTransfer.files;
-                } else if(e.target) {
-                  files = e.target.files;
-                }
-                callback.call(null, files);
-              }
-              function makeDroppable(ele, callback) {
-                var input = document.createElement('input');
-                input.setAttribute('type', 'file');
-                input.setAttribute('multiple', true);
-                input.style.display = 'none';
-                input.addEventListener('change', function(e) {
-                  triggerCallback(e, callback);
-                });
-                ele.appendChild(input);
-                
-                ele.addEventListener('dragover', function(e) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  ele.classList.add('dragover');
-                });
-          
-                ele.addEventListener('dragleave', function(e) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  ele.classList.remove('dragover');
-                });
-          
-                ele.addEventListener('drop', function(e) {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  ele.classList.remove('dragover');
-                  triggerCallback(e, callback);
-                });
-                
-                ele.addEventListener('click', function() {
-                  input.value = null;
-                  input.click();
-                });
-              }
-              window.makeDroppable = makeDroppable;
-            })(this);
-            (function(window) {
-              makeDroppable(window.document.querySelector('.demo-droppable'), function(files) {
-                console.log(files);
-                var output = document.querySelector('.output');
-                output.innerHTML = '';
-                for(var i=0; i<files.length; i++) {
-                  if(files[i].type.indexOf('image/') === 0) {
-                    output.innerHTML += '<img width="200" src="' + URL.createObjectURL(files[i]) + '" />';
-                  }
-                  output.innerHTML += '<p>'+files[i].name+'</p>';
-                }
-              });
-            })(this);
-        </script>     
+          $(document).ready(function(){
+            $('.dz-error-mark').click(function(){
+                $('.dz-image').hide();
+            });
+          });
+        </script> 
+  
     </body>
 </html>

@@ -274,6 +274,9 @@ box-shadow: none;
       color: white;
       padding: 14px;   
   }
+  .nav-pills .nav-link{
+    border-radius: 0;
+  }
   .tabButton .nav li a:active{
       background-color: #E78C03;
   }
@@ -371,26 +374,16 @@ box-shadow: none;
   border: 2px solid #c70919;
   box-shadow: 1px 1px 1px 2px rgb(243, 231, 231); 
 }
-.btn-file {
-	position: relative;
-	overflow: hidden;
-	margin-top: 5px;
-	}
-.btn-file input[type=file] {
-	position: absolute;
-	top: 0;
-	right: 0;
-	min-width: 100%;
-	min-height: 100%;
-	font-size: 100px;
-	text-align: left;
-	filter: alpha(opacity=0);
-	opacity: 0;
-	outline: none;
-	background: white;
-	cursor: inherit;
-	display: block;
-	}
+.dropzone{
+  border:3px dashed #E78C03;text-align: center;
+}
+.dz-error-mark,.dz-error-message,.dz-size,.dz-image,.dz-progress{
+  display: none;
+}
+
+.dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark{
+  top: 70%;
+}
   .accordion{
     border: 1px solid rgb(214, 207, 207);
     border-radius: 5px;
@@ -398,9 +391,7 @@ box-shadow: none;
   .accordion p{
     font-size: 16px;
   }
-  /* .dz-success-mark,.dz-error-mark,.dz-default.dz-message,.dz-size{
-    display: none;
-  } */
+
  .output{
    border-radius: 5px;
    background-color: white;
