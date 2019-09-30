@@ -52,7 +52,7 @@
                     <ul class="nav nav-pills text-white bg-dark flex-column flex-md-row nav-justified">
                         <li class="nav-item border-right"><a class="nav-link active" data-toggle="pill" href="#companyDetails">Company Details</a></li>
                         <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#addDetail">Bank Account</a></li>
-                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#">Activities</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#activities">Activities</a></li>
                         <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#branches"> Branches </a></li>
                         <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#uploadDocuments">Upload Documents</a></li>
                         <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#submitData">Submit Your Data </a></li>
@@ -328,6 +328,39 @@
                         
                         <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
                     </div>
+                    <div id="activities" class="tab-pane container">
+                        <div class="activities">
+                            <div class="container text-center">
+                                <h3 class="mt-4">Add Your Company Activities</h3>
+                                <p class="mt-4">Please note that after submitting, you won’t be able to 
+                                    edit your Activities till your data got approval or rejection. 
+                                    So make sure it's all correct and clear.     
+                                </p>
+                                <p class="mt-4">The rest of your data is editable, except the Activities.</p><br>
+                            </div>
+                        </div>
+                        <div class="activitiesContent mt-2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-lg-5 col-md-5 ">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="Add the name"
+                                                aria-describedby="helpId">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 ">
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <input type="text" name="" id="" class="form-control" placeholder="Add your address"
+                                                aria-describedby="helpId">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="branches" class="tab-pane container">
                         <h2 class="text-center mb-3 pt-4">Add your company branches</h2><br>
                         <div class="addDetails mt-2 p-5">
@@ -460,7 +493,7 @@
                     </div>
                     <div id="uploadDocuments" class="tab-pane">
                         <h2 class="text-center mt-2 mb-3 pt-4">Upload Your Company Documents</h2><br>
-                        <div class="uploadDocuments">
+                        <div class="uploadDocuments mb-5">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-1"></div>
@@ -495,29 +528,31 @@
                                                        <div class="container exDate">
                                                            <div class="row">
                                                                <div class="col-lg-1"></div>
-                                                               <div class="col-lg-5 col-12">
-                                                                <form class="form-inline mb-2">
-                                                                    <div class="form-group">
+                                                               <div class="col-lg-10 col-12">
+                                                                <form class="form-inline text-center mb-2">
+                                                                    <div class="form-group ml-5">
                                                                         <label class="font-weight-bold mr-2">Start Date</label>
                                                                         <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
-                                                                    </div>
-                                                                </form>
-                                                               </div>
-                                                               <div class="col-lg-5 col-12">
-                                                                <form class="form-inline mb-2">
-                                                                    <div class="form-group">
-                                                                        <label class="font-weight-bold mr-2">Expire date</label>
+                                                                
+                                                                        <label class="font-weight-bold ml-4 mr-2">Expire date</label>
                                                                         <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
                                                                     </div>
+                                                                    <div class="container text-center">
+                                                                        <p class="mt-3">Drag & Drop or click in the box to upload Files</p>
+                                                                        <input id="thefiles" type="file" name="files" accept=".pdf" multiple>
+                                                                        <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
+                                                                    </div>
                                                                 </form>
+                                                                    
+                                                                
                                                                </div>
                                                            </div>
                                                        </div>
-                                                       <div class="container text-center">
+                                                       <!-- <div class="container text-center">
                                                         <p class="mt-2">Drag & Drop or click in the box to upload Files</p>
                                                         <input id="thefiles" type="file" name="files" accept=".pdf" multiple>
                                                         <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                 </div>
                                         
@@ -530,6 +565,7 @@
                                 </div>
                             </div>
                         </div>
+                        <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
                     </div>
                     <div id="submitData" class="tab-pane">
                         <h2 class="text-center mb-3 pt-4">Submit Your Data</h2><br>
@@ -585,8 +621,8 @@
                     maxfilesize : 1000000
                 });
             });
-            </script>
-            <script type="text/javascript">
+        </script>
+        <script type="text/javascript">
             
               var _gaq = _gaq || [];
               _gaq.push(['_setAccount', 'UA-36251023-1']);
@@ -599,7 +635,6 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
               })();
             
-            </script>
-  
+        </script>
     </body>
 </html>
