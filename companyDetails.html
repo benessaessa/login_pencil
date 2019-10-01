@@ -67,14 +67,14 @@
                                 <div class="col-lg-5 col-md-5 ">
                                     <div class="form-group">
                                         <label>Company Address</label>
-                                        <input type="text" name="" id="" class="form-control inputFieldStyle" placeholder="73 Ezzat Mohammed Selim Street, Almazah, Heliopolis"
+                                        <input type="text"  class="form-control inputFieldStyle" placeholder="73 Ezzat Mohammed Selim Street, Almazah, Heliopolis"
                                             aria-describedby="helpId">
                                     </div>
                                 </div>
                                 <div class="col-lg-5 col-md-5 ">
                                     <div class="form-group">
                                         <label>Commercial Name</label>
-                                        <input type="text" name="" id="" class="form-control" placeholder="Add your commercial name"
+                                        <input type="text"  class="form-control" placeholder="Add your commercial name"
                                             aria-describedby="helpId">
                                     </div>
                                 </div>
@@ -527,10 +527,10 @@
                                                        </p>
                                                        <div class="container exDate">
                                                            <div class="row">
-                                                               <div class="col-lg-1"></div>
-                                                               <div class="col-lg-10 col-12">
-                                                                <form class="form-inline text-center mb-2">
-                                                                    <div class="form-group ml-5">
+                                                               <div class="col-lg-12 col-12">
+
+                                                                <form class="form-inline justify-content-center text-center mb-2">
+                                                                    <div class="form-group">
                                                                         <label class="font-weight-bold mr-2">Start Date</label>
                                                                         <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
                                                                 
@@ -539,26 +539,77 @@
                                                                     </div>
                                                                     <div class="container text-center">
                                                                         <p class="mt-3">Drag & Drop or click in the box to upload Files</p>
-                                                                        <input id="thefiles" type="file" name="files" accept=".pdf" multiple>
+                                                                        <input class="thefiles" type="file" name="files" accept=".pdf" multiple>
                                                                         <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
                                                                     </div>
                                                                 </form>
                                                                     
-                                                                
                                                                </div>
                                                            </div>
                                                        </div>
-                                                       <!-- <div class="container text-center">
-                                                        <p class="mt-2">Drag & Drop or click in the box to upload Files</p>
-                                                        <input id="thefiles" type="file" name="files" accept=".pdf" multiple>
-                                                        <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
-                                                        </div> -->
+
                                                     </div>
                                                 </div>
-                                        
+                                                
                                             </div>
                                             <!-- Accordion card -->
+                                            
+                                        </div>
+                                        <div class="accordion md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
                                         
+                                            <!-- Accordion card -->
+                                            <div class="card bordered firstUploadCollapse">
+                                        
+                                                <!-- Card header -->
+                                                <div class="card-header p-3" role="tab">
+                                                    <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseOne2" aria-expanded="true"
+                                                        aria-controls="collapseOne2">
+                                                        <h5 class="mb-2 border-bottom-0">
+                                                            Partnership deed or memorandum of article of association 
+                                                            <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                                        </h5>
+                                                    </a>
+                                                </div>
+                                        
+                                                <!-- Card body -->
+                                                <div  class="collapse borderd border-top-0 collapseOne2" role="tabpanel" aria-labelledby="headingOne1"
+                                                    data-parent="#accordionEx">
+                                                    <div class="card-body">
+                                                       <p class="text-center p-2">
+                                                        It’s a set of formal documents filed with a government body 
+                                                        to legally document the creation of a corporation. Articles of incorporation must 
+                                                        contain pertinent information such as the firm's name, street address, 
+                                                        agent for service of process and the amount and type of stock to be issued.
+                                                       </p>
+                                                       <div class="container exDate">
+                                                           <div class="row">
+                                                               <div class="col-lg-12 col-12">
+
+                                                                <form class="form-inline justify-content-center text-center mb-2">
+                                                                    <div class="form-group">
+                                                                        <label class="font-weight-bold mr-2">Start Date</label>
+                                                                        <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                
+                                                                        <label class="font-weight-bold ml-4 mr-2">Expire date</label>
+                                                                        <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                    </div>
+                                                                    <div class="container text-center">
+                                                                        <p class="mt-3">Drag & Drop or click in the box to upload Files</p>
+                                                                        <input class="thefiles" type="file" name="files" accept=".pdf" multiple>
+                                                                        <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
+                                                                    </div>
+                                                                </form>
+                                                                    
+                                                               </div>
+                                                           </div>
+                                                       </div>
+
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- Accordion card -->
+                                            
                                         </div>
                                         <!-- Accordion wrapper -->
                                     </div>
@@ -592,7 +643,8 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>   
+
         <!-- Footer -->
         <footer class="text-center text-white pt-4 pb-3 mt-5">
             <ul class="list-inline">
@@ -614,13 +666,14 @@
         <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
         <script type="text/javascript">
             $(function() {
-                $('#thefiles').FancyFileUpload({
+                $('.thefiles').FancyFileUpload({
                     params : {
                         action : 'fileuploader'
                     },
                     maxfilesize : 1000000
                 });
             });
+
         </script>
         <script type="text/javascript">
             
