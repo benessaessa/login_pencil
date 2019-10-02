@@ -1,158 +1,243 @@
 /* ================ Page Login ======================= */
 /* =================================================== */
 header{
-    box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
-    padding: 15px;
+  box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
+  padding: 15px;
 }
 .content h4{
-    color: #4B4B4B;
-    font-size: 30px;
+  font-weight: 600;
+  font-size: 30px;
 }
 .content label,.formShadow label{
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 3px;
+  font-weight: 600;
 }
   input::-webkit-input-placeholder {
-    font-size: 12px;
-    line-height: 3;
-  }
+  font-size: 12px;
+  line-height: 3;
+}
 .content .form-control{
-    width: 90%;
-    border: none;
-    font-size: 14px;
-    background-color: rgb(248, 240, 240);
-    height: 44px;
+  width: 90%;
+  border: none;
+  font-size: 14px;
+  background-color: rgb(248, 240, 240);
+  height: 44px;
 }
 .content .form-control:focus{
   border: 1px solid #E78C03;
   background-color: white;
   box-shadow: none;
 }
+.input-group .input-group-prepend .input-group-text{
+  background-color: rgb(248, 240, 240);
+}
 .formLogIn .input-group{
-    width: 90%;
+  width: 90%;
 }
 .formLogIn .input-group .input-group-prepend .fa,.formShadow .fa{
-    color: #E78C03;
+  color: #E78C03;
 }
 .content .password{
-    width: 60% !important;
+  width: 60% !important;
 }
 .login{
-    box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
-    padding: 15px;
+  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+.login h3{
+  color: #000000;
+  font-size: 30px;	font-weight: bold;
 }
 .login h6{
-    font-size: 19px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .btnLogin{
-    background-color: #E78C03;
-    color: white;
-    border-radius: 20px;
-    width: 50%;
-    font-size: 18px;
+  background-color: #E78C03;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  font-size: 18px;
 }
-.btnLogin .fa{
-    color: white;
+.btnLogin:hover{
+  color: #000000;
 }
 .forget{
-    color: black;
+  color: black;
+  font-weight: 500;
 }
 .btnLogin2{
-    background-color: #E78C03;
-    color: white;
-    border-radius: 20px;
-    width: 50%;
-    font-size: 18px;
+  background-color: #E78C03;
+  color: white;
+  border-radius: 20px;
+  width: 50%;
+  font-size: 18px;
 }
+
 .logPhoto img{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.logPhoto h3{
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
 }
 .logPhoto p{
-    font-size: 20px;
-    color: black;
+  font-size: 20px;
+  color: black;
 }
 .check{
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
   
-  /* Hide the browser's default checkbox */
-  .check input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
+/* Hide the browser's default checkbox */
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
   
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  }
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
   
-  /* On mouse-over, add a grey background color */
-  .check:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
+/* On mouse-over, add a grey background color */
+.check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
   
-  /* When the checkbox is checked, add a blue background */
-  .check input:checked ~ .checkmark {
-    background-color: #E78C03;
-  }
+/* When the checkbox is checked, add a blue background */
+.check input:checked ~ .checkmark {
+  background-color: #E78C03;
+}
   
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
   
   /* Show the checkmark when checked */
-  .check input:checked ~ .checkmark:after {
-    display: block;
-  }
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
   
-  /* Style the checkmark/indicator */
-  .check .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+/* Style the checkmark/indicator */
+.check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 footer .list-inline .list-inline-item a{
-    color: white;
+  color: white;
 }
 footer{
-    background-color: black;
+  background-color: black;
+}
+/* =========================================== page Forget Password ============== */
+.forgetSection p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.forgetSection,.emailVerificate{
+  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+.forgetSection label{
+  font-weight: 500;
+  font-size: 17px;
+}
+.forgetSection .form-control{
+  background-color: rgb(248, 240, 240);
+  border:none;
+}
+.forgetSection .form-control:focus{
+  border: 1px solid #E78C03 !important;
+  background-color: white;
+  box-shadow: none;
+}
+/* =========================================== page Reset Password =============== */
+.resetPassword{
+  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+.resetPassword p{
+  font-size: 18px;
+  font-weight: 500;
+}
+.resetPassword label{
+  font-size: 16px;
+  font-weight: 500;
+}
+.resetPassword .form-control{
+  background-color: rgb(248, 240, 240);
+  border:none;
+}
+.resetPassword .form-control:focus{
+  border: 1px solid #E78C03 !important;
+  background-color: white;
+  box-shadow: none;
+}
+.resetPassword .form-group .fa{
+  color: #E78C03;
 }
 /* =========================================== page Registration ================ */
 .registration h3{
   color: #4B4B4B;
   font-size: 30px;
 }
+.list-group-horizontal .list-group-item{
+  background-color: rgb(212, 226, 231);
+  cursor: pointer;
+}
+.bg-dangerr{
+  background-color: #E78C03 !important;
+  color: white;
+}
+.bg-dangerrr{
+  background-color: #E78C03 !important;
+  color: white;
+}
+.bg-successs{
+  background-color: #E78C03 !important;
+  color: white;
+}
 .registration p{
   font-size: 20px;
   font-weight: 500;
+}
+.accordion .card-body{
+  background-color: white;
 }
 .formShadow {
   box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
@@ -171,178 +256,113 @@ box-shadow: none;
 .check a{
   color: #E78C03;
 }
-/* ===================================================================================== */
-/* ============================================ page Choose Business =================== */
-/* The customRadio */
-.chooseOption{
-  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+.check p{
+  font-size: 12px;
+  line-height: 26px;
 }
-.customRadio {
-    margin-bottom: 0px;
-    display:inline-block;
-    position: relative;
-    padding-left: 35px;
-    /* margin-bottom: 10px; */
-    cursor: pointer;
-    font-size: 20px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .customRadio input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmarks {
-    position: absolute;
-    top: 0;
-    margin-top: 2px;
-    left: 0;
-    height: 26px;
-    width: 27px;
-    background-color: white;
-    border-radius: 50%;
-    border:1px solid black;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .customRadio:hover input ~ .checkmarks {
-    background-color: orange;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .customRadio input:checked ~ .checkmarks {
-    background-color: white;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmarks:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .customRadio input:checked ~ .checkmarks:after {
-    display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .customRadio .checkmarks:after {
-    top: 4px;
-    left: 4px;
-    width: 17px;
-    height: 17px;
-    border-radius: 50%;
-    background: orange;
+/* ================================= page Email Verification =============================*/
+.emailVerificate img{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
 }
-.btnConfirm{
-    background-color: #E78C03;
-    color: white;
-    border-radius: 20px;
-    width: 20%;
-    font-size: 18px;
-}
-/* =========================================================================== */
 /* ======================================== Page Details ====================== */
-.txtWorn p{
-  color: #EE2525;
-  font-size: 16px;
-  }
-  .AccountStatus{
-  font-size: 21px;
-  line-height: 29px;
-  font-weight: 500;
-  }
-  .notSubmit{
-  font-size: 24px;
-  font-weight: bold;
-  }
-  .tab-content h2{
-    font-size: 30px;
-  }
-  .tabButton .bg-dark{
-    background-color: #000000 !important;
-  }
-  .tabButton .nav li a{
-      color: white;
-      padding: 14px;   
-  }
-  .nav-pills .nav-link{
-    border-radius: 0;
-  }
-  .tabButton .nav li a:active{
-      background-color: #E78C03;
-  }
-  .tabButton .nav li a:visited{
-      background-color: #E78C03;
-  }
-  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: #E78C03;
-  }
-  .tabButton .nav li a:focus{
-      background-color: #E78C03;
-  }
-  .tabButton .nav li a:hover{
-      background-color: #E78C03;
-  }
-  @media screen and (max-width:600px){
-    .details .tabButton .bg-dark .li{
-      display: flex;
-      width: 100px;
-      background-color: red !important;
-      justify-content: center;
-    }
-  }
+.txtWorn {
+  background-color:#CDEBF3;
+  border-radius: 5px;
+}
+.firstUploadCollapse .card-body{
   
-  .btnSubmit{
+  background-color: white; 
+}
+.btnClickAddContact{
+  background-color: white;
+  color: #E78C03;
+  font-size: 18px;
+}
+.tab-content h2{
+  font-size: 30px;
+}
+
+.tabButton .bg-dark{
+  background-color: #000000 !important;
+  border-radius: 3px;
+}
+.tabButton .nav li a{
+  color: white;
+  padding: 14px;   
+}
+.nav-pills .nav-link{
+  border-radius: 0;
+}
+.tabButton .nav li a:active{
+  background-color: #E78C03;
+}
+.tabButton .nav li a:visited{
+  background-color: #E78C03;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #E78C03;
+}
+.tabButton .nav li a:focus{
+  background-color: #E78C03;
+}
+.tabButton .nav li a:hover{
+  background-color: #E78C03;
+}
+@media screen and (max-width:600px){
+  .details .tabButton .bg-dark .li{
+    display: flex;
+    width: 100px;
+    background-color: red !important;
+    justify-content: center;
+  }
+}
+  
+.btnSubmit{
   background-color: #E78C03;
   color: white;
   width: 250px;
   border-radius: 20px;
   font-size: 18px;
-  }
+}
  
-  .addDetails{
+  /* .addDetails{
     box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
-  }
-  .addDetails .form-control{
+    background-color: #FFFFFF;
+  } */
+.addDetails .form-control{
   border: none;
   font-size: 14px;
   background-color: rgb(248, 240, 240);
   height: 44px;
-  }
-  .addDetails .form-control:focus{
+}
+.addDetails .form-control:focus{
   border: 1px solid #E78C03;
   background-color: white;
   box-shadow: none;
-  }
-  .addDetails label{
+}
+.addDetails label{
   font-weight: bold;
   margin: 0;
   padding: 0;
-  }
-  .linkAdd a{
-    color: #E78C03;
-    font-size: 18px;
-    font-weight: 500;
-    font-family: "Archivo Narrow";
-  }
+}
+.linkAdd a{
+  color: #E78C03;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Archivo Narrow";
+}
 
-  .btnClickAddAccount{
-    color: #E78C03;
-  }
-  .ordList p{
-    color: #E78C03;
-    text-align: center;
-    font-weight: bold;
-  }
+.btnClickAddAccount{
+  color: #E78C03;
+}
+.ordList p{
+  color: #E78C03;
+  text-align: center;
+  font-weight: bold;
+}
+
   /* ========================================= Activities =====================*/
   .activities h3{
     font-size: 30px;
@@ -361,8 +381,9 @@ box-shadow: none;
 /* ========================================= Upload Documents ====== */
 .firstUploadCollapse .card-header h5{
   color: #000000;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
+  padding: 10px 15px;
 }
 .firstUploadCollapse .card-header a:hover{
   text-decoration: none;
@@ -370,10 +391,7 @@ box-shadow: none;
 .exDate .form-inline .form-group .form-control{
   width: 175px !important;
 }
-.firstUploadCollapse .card-body{
-  border: 2px solid beige;
-  background-color: rgba(0,0,0,.03); 
-}
+
 .uploadDocuments{
   box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
 }
@@ -396,7 +414,10 @@ box-shadow: none;
   border: 2px dashed #E78C03;
 }
   .accordion{
-    border: 1px solid rgb(214, 207, 207);
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: 0 0 20px 0 rgba(175,145,100,0.2);
     border-radius: 5px;
   }
   .accordion p{
