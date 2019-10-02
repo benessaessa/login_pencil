@@ -271,6 +271,14 @@ box-shadow: none;
   background-color:#CDEBF3;
   border-radius: 5px;
 }
+.txtSuccess{
+  border-radius: 5px;
+  background-color: #B4FFDB;
+}
+.txtReview{
+  background-color: #FFDFB4;
+  border-radius: 5px;
+}
 .firstUploadCollapse .card-body{
   
   background-color: white; 
@@ -344,7 +352,7 @@ box-shadow: none;
 }
 .addDetails label{
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 0.3rem;
   padding: 0;
 }
 .linkAdd a{
@@ -381,8 +389,10 @@ box-shadow: none;
 /* ========================================= Upload Documents ====== */
 .firstUploadCollapse .card-header h5{
   color: #000000;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 2rem;
+  margin-right: 2rem;
   padding: 10px 15px;
 }
 .firstUploadCollapse .card-header a:hover{
@@ -394,6 +404,13 @@ box-shadow: none;
 
 .uploadDocuments{
   box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+}
+.uploadDocuments .accordion{
+  border: 1px solid #4B4B4B;
+  box-shadow: none;
+}
+.uploadDocuments .accordion .card-body{
+  background-color: rgba(0,0,0,.03);
 }
 .uploadDocuments .box{
   box-sizing: border-box;	
@@ -460,12 +477,22 @@ box-shadow: none;
 .submitData p{
   font-size: 18px;
 }
-.btnSubmitData{
+.btnSubmitDataFaill{
+  background-color: rgb(177, 167, 152);
+  color: white;
+  width: 250px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+.btnSubmitDataSuccess{
   background-color: #E78C03;
   color: white;
   width: 250px;
   border-radius: 20px;
   font-size: 18px;
+}
+.btnSubmitDataFaill:hover{
+  color: white;
 }
 /* ================================ Page Account Setting ================*/
 .btnSaveChanges{

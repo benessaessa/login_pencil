@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Company Details</title>
+        <title>Show Details</title>
     </head>
     <body>
         <header class="pt-2">
@@ -39,10 +39,17 @@
                     </div>
                 </div>
         </header><br>
-        <div class="container txtWornDetails"><br>
-            <div><span class="AccountStatus">Account status</span><span class="float-right pendApproval">Pending Approval</span></div><br>
-            <p><img src="images/error2.svg" class="mr-2"> Please fill out your information to be able to submit your account  </p>
-        </div><br>
+            <div class="container">
+                <div class="txtReview mt-4 mb-5"><br>
+                    <div class="media">
+                        <img src="images/warning.svg" class="mr-3 ml-4" alt="...">
+                        <div class="media-body">
+                            <h6 class="mt-0">Account Status</h6>
+                            <p class="font-weight-bold">Pending Approval: Sumid team is reviewing your data and will get back to you soon.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div class="details">
             <div class="container">
                 <div class="tabButton">
@@ -56,167 +63,270 @@
                     </ul>
                 </div>
                 <div class="tab-content">
-                    <div id="companyDetailsShow" class="tab-pane container fade active show">
-                        <h2 class="text-center mb-3 mt-3 pt-4">Add Your Company Details</h2><br>
-                        <div class="addDetails p-5 mt-4">
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Company Address</label>
-                                        <p class="mt-1">73 Ezzat Mohammed Selim Street, Almazah, Heliopolis</p>
+                    <div id="companyDetailsShow" class="tab-pane p-0 container fade active show">
+                        <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                            <!-- Accordion card -->
+                            <div class="card border-0 firstUploadCollapse">
+                        
+                                <!-- Card header -->
+                                <div class="card-header bg-white p-3" role="tab">
+                                    <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseDetails1" aria-expanded="true"
+                                        aria-controls="collapseDetails1">
+                                        <h5 class="mb-2 border-0">
+                                            Basic Infomation
+                                            <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
+                                </div>
+                        
+                                <!-- Card body -->
+                                <div class="collapse show borderd border-top-0 collapseDetails1" role="tabpanel" aria-labelledby="headingOne1"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body">
+                                        <div class="addDetails p-2">
+                                            <div class="container">
+                                            <div class="row">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Company Address</label>
+                                                        <p class="mt-1">73 Ezzat Mohammed Selim Street, Almazah, Heliopolis</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Commercial Name</label>
+                                                        <p class="mt-1">ADNOC</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Country</label>
+                                                        <p class="mt-1">Egypt</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>City</label>
+                                                        <p class="mt-1">Cairo</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Phone Number</label>
+                                                        <p class="mt-1">0123456789</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Fax Number</label>
+                                                        <p class="mt-1">0020</p>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Commercial Name</label>
-                                        <p class="mt-1">ADNOC</p>
-                                    </div>
-                                </div>
+                        
                             </div>
-                            <div class="row mt-3">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Country</label>
-                                        <p class="mt-1">Egypt</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>City</label>
-                                        <p class="mt-1">Cairo</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Phone Number</label>
-                                        <p class="mt-1">0123456789</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Fax Number</label>
-                                        <p class="mt-1">0020</p>
-                                    </div>
-                                </div>
-                            </div>   
+
                         </div>
-                        <div class="addDetails p-5 mt-4">
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Contact Person</label>
-                                        <p class="mt-1">Hend Ibrahim</p>
-                                    </div>
+
+                        <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionDetail2" role="tablist" aria-multiselectable="true">
+                            <!-- Accordion card -->
+                            <div class="card border-0 firstUploadCollapse">
+                        
+                                <!-- Card header -->
+                                <div class="card-header bg-white p-3" role="tab">
+                                    <a data-toggle="collapse" data-parent="#accordionDetail2" href=".collapseDetailShow" aria-expanded="true"
+                                        aria-controls="collapseDetailShow">
+                                        <h5 class="mb-2 border-0">
+                                            Contacts
+                                            <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
                                 </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Contact Role</label>
-                                        <p class="mt-1">Account Manager</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row mt-3">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Phone Number</label>
-                                        <p class="mt-1">0123456789</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Fax Number</label>
-                                        <p class="mt-1">0020</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="addDetails p-5 mt-4 mb-5">
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Agent Name</label>
-                                        <p class="mt-1">Ahmed Ali</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Country</label>
-                                        <p class="mt-1">Saudi Arabia</p>
+                        
+                                <!-- Card body -->
+                                <div class="collapse show borderd border-top-0 collapseDetailShow" role="tabpanel" aria-labelledby="headingOne1"
+                                    data-parent="#accordionEx">
+                                    <div class="card-body">
+                                        <div class="addDetails p-2">
+                                            <div class="row">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Contact Person</label>
+                                                        <p class="mt-1">Hend Ibrahim</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Contact Role</label>
+                                                        <p class="mt-1">Account Manager</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="row mt-3">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Phone Number</label>
+                                                        <p class="mt-1">0123456789</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Fax Number</label>
+                                                        <p class="mt-1">0020</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Phone Number</label>
-                                        <p class="mt-1">0123456789</p>
-                                    </div>
+                        </div>
+
+                        <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionDetail3" role="tablist" aria-multiselectable="true">
+                            <!-- Accordion card -->
+                            <div class="card border-0 firstUploadCollapse">
+                        
+                                <!-- Card header -->
+                                <div class="card-header bg-white p-3" role="tab">
+                                    <a data-toggle="collapse" data-parent="#accordionDetail3" href=".collapseDetailShow3" aria-expanded="true"
+                                        aria-controls="collapseDetailShow3">
+                                        <h5 class="mb-2 border-0">
+                                                Agent Information
+                                            <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
                                 </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Email Address</label>
-                                        <p class="mt-1">ahmed.ali@gmail.com</p>
+                        
+                                <!-- Card body -->
+                                <div class="collapse show borderd border-top-0 collapseDetailShow3" role="tabpanel" aria-labelledby="headingOne1"
+                                    data-parent="#accordionDetail3">
+                                    <div class="card-body">
+                                        <div class="addDetails p-2">
+                                            <div class="row">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Agent Name</label>
+                                                        <p class="mt-1">Ahmed Ali</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Country</label>
+                                                        <p class="mt-1">Saudi Arabia</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="row">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Phone Number</label>
+                                                        <p class="mt-1">0123456789</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Email Address</label>
+                                                        <p class="mt-1">ahmed.ali@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         
                         </div><br>
-                    
+                            
                     </div>
+                    
                     <div id="bankAccountDetails" class="tab-pane">
-                        <h2 class="text-center mb-3 mt-3 pt-4"> Company Bank Details</h2><br>
+                        <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionDetail3" role="tablist" aria-multiselectable="true">
+                            <!-- Accordion card -->
+                            <div class="card border-0 firstUploadCollapse">
+                        
+                                <!-- Card header -->
+                                <div class="card-header bg-white p-3" role="tab">
+                                    <a data-toggle="collapse" data-parent="#accordionDetail3" href=".collapseDetailShow3" aria-expanded="true"
+                                        aria-controls="collapseDetailShow3">
+                                        <h5 class="mb-2 border-0">
+                                                Bank Information
+                                            <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
+                                </div>
+                        
+                                <!-- Card body -->
+                                <div class="collapse show borderd border-top-0 collapseDetailShow3" role="tabpanel" aria-labelledby="headingOne1"
+                                    data-parent="#accordionDetail3">
+                                    <div class="card-body">
+                                        <div class="addDetails p-2">
+                                            <div class="row">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Name</label>
+                                                        <p class="mt-1">Commercial International Bank</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Abbreviation</label>
+                                                        <p class="mt-1">CIB</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Swift Code</label>
+                                                        <p class="mt-1">CIBEEGCX002</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Account Number</label>
+                                                        <p class="mt-1">1245548954</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-1"></div>
+                                                <div class="col-lg-5 col-md-5 ">
+                                                    <div class="compAdd">
+                                                        <label>Country</label>
+                                                        <p class="mt-1">Egypt</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
                         <div class="addDetails p-5 mt-4">
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Name</label>
-                                        <p class="mt-1">Commercial International Bank</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Abbreviation</label>
-                                        <p class="mt-1">CIB</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Swift Code</label>
-                                        <p class="mt-1">CIBEEGCX002</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Account Number</label>
-                                        <p class="mt-1">1245548954</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-1"></div>
-                                <div class="col-lg-5 col-md-5 ">
-                                    <div class="compAdd">
-                                        <label>Country</label>
-                                        <p class="mt-1">Egypt</p>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <div id="companyBranches" class="tab-pane">
