@@ -43,7 +43,7 @@
             </div>
         </header><br>
         <div class="container">
-            <div class="txtWorn"><br>
+            <div class="txtWorn mt-2 mb-4"><br>
                 <div class="media">
                     <img src="images/time.svg" class="mr-3 ml-4" alt="...">
                     <div class="media-body">
@@ -52,12 +52,30 @@
                     </div>
                 </div>
             </div>
-            <div class="txtSuccess mt-2"><br>
+            <div class="txtSuccess mt-2 mb-4"><br>
                 <div class="media">
                     <img src="images/true.png" class="mr-3 ml-4" alt="...">
                     <div class="media-body">
                         <h6 class="mt-0">Account Status</h6>
                         <p class="font-weight-bold">Successfully Approved: your data is approved by Arab Petroleum Pipelines Co. SUMED information system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="txtReview mt-2 mb-4"><br>
+                <div class="media">
+                    <img src="images/warning.svg" class="mr-3 ml-4" alt="...">
+                    <div class="media-body">
+                        <h6 class="mt-0">Account Status</h6>
+                        <p class="font-weight-bold">Pending Approval: Sumid team is reviewing your data and will get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="txtReject mt-2 mb-4"><br>
+                <div class="media">
+                    <img src="images/reject.svg" class="mr-3 ml-4" alt="...">
+                    <div class="media-body">
+                        <h6 class="mt-0">Account Status</h6>
+                        <p class="font-weight-bold">Rejected: please check your activities status and make sure all your data is correct.</p>
                     </div>
                 </div>
             </div>
@@ -949,6 +967,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="js/file.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
         <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
@@ -978,13 +997,6 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
               })();
             
-        </script>
-        <script>
-            $(".accordion h5>.fa-angle-down, .accordion h5>.fa-angle-up").on("click",function(){
-                if($(this).hasClass("fa-angle-down")){
-                    $(this).removeClass("fa-angle-down").addClass("fa-angle-up")
-                        } else $(this).removeClass("fa-angle-up").addClass("fa-angle-down")
-                    })
         </script>
     </body>
 </html>

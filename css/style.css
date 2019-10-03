@@ -317,6 +317,10 @@ box-shadow: none;
   background-color: #FFDFB4;
   border-radius: 5px;
 }
+.txtReject{
+  background-color: #FFC5B4;
+  border-radius: 5px;
+}
 
 .firstUploadCollapse .card-body{
   

@@ -40,3 +40,8 @@ $("input").on("keyup",function(){
 	if($(this).val()=="") $(this).next(".emptyInput").addClass("d-none")
 	else $(this).next(".emptyInput").removeClass("d-none")
 })
+$(".accordion h5>.fa-angle-down, .accordion h5>.fa-angle-up").on("click",function(){
+	if($(this).hasClass("fa-angle-down")){
+		$(this).removeClass("fa-angle-down").addClass("fa-angle-up")
+			} else $(this).removeClass("fa-angle-up").addClass("fa-angle-down")
+		})
