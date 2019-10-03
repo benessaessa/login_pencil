@@ -433,7 +433,7 @@ box-shadow: none;
 /* ========================================= Upload Documents ====== */
 .firstUploadCollapse .card-header h5{
   color: #000000;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -455,6 +455,10 @@ box-shadow: none;
 }
 .uploadDocuments .accordion .card-body{
   background-color: rgba(0,0,0,.03);
+}
+.uploadShow .bg-white p{
+  color: #AF9164;
+  padding-left:1rem; 
 }
 .uploadDocuments .box{
   box-sizing: border-box;	
@@ -595,4 +599,21 @@ box-shadow: none;
   font-weight: bold;	
   letter-spacing: 1.33px;	
   line-height: 32px;
+}
+/* ====================================================== Dropdown =============================== */
+.dropdown-item-special {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 0.5rem;
+  transition: all 0.5s;
+}
+.dropdown-item-special:hover {
+  background-color: #e0cbac;
+}
+.dropdown-menu {
+  padding-bottom: 0px;
+}
+#notificationDropdownMenu {
+  top: 25px !important;
+  transform: translate3d(-175px, 15px, 0px) !important;
 }
