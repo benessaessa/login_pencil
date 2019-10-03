@@ -40,82 +40,136 @@
             </div>
         </header><br>
         <div class="container"><br>
-            <h2 class="text-left" >Account Setting</h3>
-        </div><br>
-        <div class="accountSetting pb-1">
-            <div class="container">
-                <div class="addDetails p-5 mt-3">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-lg-5 col-md-5 ">
-                            <div class="form-group">
-                                <label>Username</label>
-                                <input type="text"  class="form-control" placeholder="Username"
-                                    aria-describedby="helpId">
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 ">
-                            <div class="form-group">
-                                <label>Email Address</label>
-                                <input type="email"  class="form-control" placeholder="khaled.haasan@gmail.com"
-                                    aria-describedby="helpId">
+            <h2 class="text-left font-weight-bold" >Account Setting</h3>
+            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                <!-- Accordion card -->
+                <div class="card border-0 firstUploadCollapse">
+            
+                    <!-- Card header -->
+                    <div class="card-header bg-white p-3" role="tab">
+                        <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseDetails1" aria-expanded="true"
+                            aria-controls="collapseDetails1">
+                            <h5 class="mb-2 border-0">
+                                Basic Infomation
+                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+            
+                    <!-- Card body -->
+                    <div class="collapse show borderd border-top-0 collapseDetails1" role="tabpanel" aria-labelledby="headingOne1"
+                        data-parent="#accordionEx">
+                        <div class="card-body">
+                            <div class="addDetails p-2">
+                                <div class="container">
+            
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-lg-5 col-md-5 ">
+                                            <div class="form-group">
+                                                <label>Username</label>
+                                                <input type="text" class="form-control" placeholder="Username"
+                                                    aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 ">
+                                            <div class="form-group">
+                                                <label>Email Address</label>
+                                                <input type="email" class="form-control" placeholder="khaled.haasan@gmail.com"
+                                                    aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-lg-5 col-md-5 ">
+                                            <div class="form-group">
+                                                <label>Company Name</label>
+                                                <input type="tel" class="form-control" placeholder="ADONC"
+                                                    aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 ">
+                                            <div class="form-group">
+                                                <label>Change Language</label>
+                                                <select class="form-control">
+                                                    <option><a href="#">English</a></option>
+                                                    <option><a href="#">Arabic</a></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-lg-5 col-md-5 ">
-                            <div class="form-group">
-                                <label>Company Name</label>
-                                <input type="tel"  class="form-control" placeholder="ADONC"
-                                    aria-describedby="helpId">
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 ">
-                            <div class="form-group">
-                                <label>Change Language</label>
-                                <select class="form-control">
-                                    <option><a href="#">English</a></option>
-                                    <option><a href="#">Arabic</a></option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>   
+            
                 </div>
-                <div class="addDetails p-5 mt-4">
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-lg-5 col-md-5 ">
-                            <div class="form-group">
-                                <label>Current Password</label>
-                                <input type="password"  class="form-control" placeholder="********"
-                                    aria-describedby="helpId">
+                <!-- Accordion card -->
+            </div>
+
+            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionEx2" role="tablist" aria-multiselectable="true">
+                <!-- Accordion card -->
+                <div class="card border-0 firstUploadCollapse">
+            
+                    <!-- Card header -->
+                    <div class="card-header bg-white p-3" role="tab">
+                        <a data-toggle="collapse" data-parent="#accordionEx2" href=".collapseDetails2" aria-expanded="true"
+                            aria-controls="collapseDetails2">
+                            <h5 class="mb-2 border-0">
+                                Password
+                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                            </h5>
+                        </a>
+                    </div>
+            
+                    <!-- Card body -->
+                    <div class="collapse show borderd border-top-0 collapseDetails2" role="tabpanel" aria-labelledby="headingOne1"
+                        data-parent="#accordionEx2">
+                        <div class="card-body">
+                            <div class="addDetails p-2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-lg-5 col-md-5 ">
+                                            <div class="form-group">
+                                                <label>Current Password</label>
+                                                <input type="password"  class="form-control" placeholder="********"
+                                                    aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-lg-5 col-md-5 ">
+                                            <div class="form-group">
+                                                <label>New Password</label>
+                                                <input type="password"  class="form-control" placeholder="********"
+                                                    aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-md-5 ">
+                                            <div class="form-group">
+                                                <label>Confirm New Password</label>
+                                                <input type="password"  class="form-control" placeholder="********"
+                                                    aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-lg-5 col-md-5 ">
-                            <div class="form-group">
-                                <label>New Password</label>
-                                <input type="password"  class="form-control" placeholder="********"
-                                    aria-describedby="helpId">
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 ">
-                            <div class="form-group">
-                                <label>Confirm New Password</label>
-                                <input type="password"  class="form-control" placeholder="********"
-                                    aria-describedby="helpId">
-                            </div>
-                        </div>
-                    </div>   
-                </div><br>
-                <p class="text-center pt-2"><button class="btn btnSaveChanges font-weight-bold">Save Changes </button></p>
+                </div>
+                <!-- Accordion card -->
             </div>
-        </div>
+            <p class="text-center mt-3 pt-2"><button class="btn btnSaveChanges font-weight-bold">Save Changes </button></p>
+        </div><br>
+        
         <!-- Footer -->
         <footer class="text-center text-white pt-4 pb-3 mt-5">
             <ul class="list-inline">
