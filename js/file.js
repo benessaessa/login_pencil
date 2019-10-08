@@ -44,4 +44,10 @@ $(".accordion h5>.fa-angle-down, .accordion h5>.fa-angle-up").on("click",functio
 	if($(this).hasClass("fa-angle-down")){
 		$(this).removeClass("fa-angle-down").addClass("fa-angle-up")
 			} else $(this).removeClass("fa-angle-up").addClass("fa-angle-down")
-		})
+})
+
+	$('.editBtn').click(function(evt){
+		evt.preventDefault();
+		$('#companyDetailsShow').hide();
+		$('.editDetails').show();
+	});

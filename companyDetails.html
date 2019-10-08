@@ -94,14 +94,14 @@
                 </div>
                 <div class="tab-content">
                     <div id="companyDetails" class="tab-pane container p-0 fade active show">
-                        <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                        <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionExEx" role="tablist" aria-multiselectable="true">
                             <!-- Accordion card -->
                             <div class="card border-0 firstUploadCollapse">
                         
                                 <!-- Card header -->
                                 <div class="card-header bg-white p-3" role="tab">
-                                    <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseDetails1" aria-expanded="true"
-                                        aria-controls="collapseDetails1">
+                                    <a data-toggle="collapse" data-parent="#accordionExEx" href=".collapseDetailsBs" aria-expanded="true"
+                                        aria-controls="collapseDetailsBs">
                                         <h5 class="mb-2 border-0">
                                             Basic Infomation
                                             <i class="float-right fas fa-angle-down rotate-icon"></i>
@@ -110,8 +110,8 @@
                                 </div>
                         
                                 <!-- Card body -->
-                                <div class="collapse show borderd border-top-0 collapseDetails1" role="tabpanel" aria-labelledby="headingOne1"
-                                    data-parent="#accordionEx">
+                                <div class="collapse show borderd border-top-0 collapseDetailsBs" role="tabpanel" aria-labelledby="headingOne1"
+                                    data-parent="#accordionExEx">
                                     <div class="card-body">
                                         <div class="addDetails p-2">
                                             <div class="container">
@@ -167,8 +167,8 @@
                                                     <div class="col-lg-5 col-md-5 ">
                                                         <div class="form-group">
                                                             <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
-                                                            <input type="number"  class="form-control"
-                                                                placeholder="Enter Your Username" aria-describedby="helpId">
+                                                            <input type="text"  class="form-control"
+                                                                placeholder="Enter Your Fax Number" aria-describedby="helpId">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -244,7 +244,7 @@
                                                         <div class="col-1"></div>
                                                         <div class="col-lg-5 col-md-5 ">
                                                             <div class="form-group">
-                                                                <label>Contact Phone</label>
+                                                                <label>Phone Number</label>
                                                                 <input type="tel"  class="form-control" placeholder="Add your company phone"
                                                                     aria-describedby="helpId">
                                                             </div>
@@ -252,7 +252,7 @@
                                                         <div class="col-lg-5 col-md-5 ">
                                                             <div class="form-group">
                                                                 <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
-                                                                <input type="number"  class="form-control" placeholder="Add your company phone"
+                                                                <input type="text"  class="form-control" placeholder="Add your Fax Number"
                                                                     aria-describedby="helpId">
                                                             </div>
                                                         </div>
@@ -290,7 +290,7 @@
                                                                     <div class="col-1"></div>
                                                                     <div class="col-lg-5 col-md-5 ">
                                                                         <div class="form-group">
-                                                                            <label>Contact Phone</label>
+                                                                            <label>Phone Number</label>
                                                                             <input type="tel"  class="form-control" placeholder="Add your company phone"
                                                                                 aria-describedby="helpId">
                                                                         </div>
@@ -298,7 +298,7 @@
                                                                     <div class="col-lg-5 col-md-5 ">
                                                                         <div class="form-group">
                                                                             <label>Fax Number</label>
-                                                                            <input type="number"  class="form-control" placeholder="Add your company phone"
+                                                                            <input type="text" pattern="[0-9]{9}" class="form-control" placeholder="Add your company phone"
                                                                                 aria-describedby="helpId">
                                                                         </div>
                                                                     </div>
@@ -397,7 +397,7 @@
                                                                     <div class="col-lg-5 col-md-5 ">
                                                                         <div class="form-group">
                                                                             <label>Agent Name</label>
-                                                                            <input type="text"  class="form-control" placeholder="Add contact person"
+                                                                            <input type="text"  class="form-control" placeholder="Add agent name"
                                                                                 aria-describedby="helpId">
                                                                         </div>
                                                                     </div>
@@ -495,14 +495,14 @@
                                                         <div class="col-lg-5 col-md-5 ">
                                                             <div class="form-group">
                                                                 <label>SWIFT Code</label><span class="float-right"><small>(Optional)</small></span>
-                                                                <input type="number" class="form-control" placeholder="Add your bank swift code"
+                                                                <input type="text" class="form-control" placeholder="Add your bank swift code"
                                                                     aria-describedby="helpId">
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-5 col-md-5 ">
                                                             <div class="form-group">
                                                                 <label>IBAN Code</label><span class="float-right"><small>(Optional)</small></span>
-                                                                <input type="number" class="form-control" placeholder="Add your account number"
+                                                                <input type="text" class="form-control" placeholder="Add your account number"
                                                                     aria-describedby="helpId">
                                                             </div>
                                                         </div>
@@ -520,7 +520,7 @@
                                                         <div class="col-lg-5 col-md-5 ">
                                                             <div class="form-group">
                                                                 <label>Account Number</label>
-                                                                <input type="tel"  class="form-control" placeholder="Add your account number"
+                                                                <input type="text"  class="form-control" placeholder="Add your account number"
                                                                     aria-describedby="helpId">
                                                             </div>
                                                         </div>
@@ -557,14 +557,14 @@
                                                                     <div class="col-lg-5 col-md-5 ">
                                                                         <div class="form-group">
                                                                             <label>SWIFT Code</label>
-                                                                            <input type="number" class="form-control" placeholder="Add your bank swift code"
+                                                                            <input type="text" class="form-control" placeholder="Add your bank swift code"
                                                                                 aria-describedby="helpId">
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-lg-5 col-md-5 ">
                                                                         <div class="form-group">
                                                                             <label>IBAN Code</label>
-                                                                            <input type="number" class="form-control" placeholder="Add your account number"
+                                                                            <input type="text" class="form-control" placeholder="Add your account number"
                                                                                 aria-describedby="helpId">
                                                                         </div>
                                                                     </div>
@@ -582,7 +582,7 @@
                                                                     <div class="col-lg-5 col-md-5 ">
                                                                         <div class="form-group">
                                                                             <label>Account Number</label>
-                                                                            <input type="tel"  class="form-control" placeholder="Add your account number"
+                                                                            <input type="text"  class="form-control" placeholder="Add your account number"
                                                                                 aria-describedby="helpId">
                                                                         </div>
                                                                     </div>
@@ -609,36 +609,182 @@
                         <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
                     </div>
                     <div id="activities" class="tab-pane container">
-                        <div class="activities">
-                            <div class="container text-center">
-                                <h3 class="mt-4">Add Your Company Activities</h3>
-                                <p class="mt-4">Please note that after submitting, you won’t be able to 
-                                    edit your Activities till your data got approval or rejection. 
-                                    So make sure it's all correct and clear.     
-                                </p>
-                                <p class="mt-4">The rest of your data is editable, except the Activities.</p><br>
-                            </div>
-                        </div>
-                        <div class="activitiesContent mt-2">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-1"></div>
-                                    <div class="col-lg-5 col-md-5 ">
-                                        <div class="form-group">
-                                            <label>Name</label>
-                                            <input type="text"  class="form-control" placeholder="Add the name"
-                                                aria-describedby="helpId">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-5 ">
-                                        <div class="form-group">
-                                            <label>Address</label>
-                                            <input type="text"  class="form-control" placeholder="Add your address"
-                                                aria-describedby="helpId">
+                        <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionActivities" role="tablist" aria-multiselectable="true">
+                            <!-- Accordion card -->
+                            <div class="card border-0 firstUploadCollapse">
+                        
+                                <!-- Card header -->
+                                <div class="card-header bg-white p-3" role="tab">
+                                    <a data-toggle="collapse" data-parent="#accordionActivities" href=".collapseActivit" aria-expanded="true"
+                                        aria-controls="collapseActivit">
+                                        <h5 class="mb-2 border-0">
+                                                <img src="images/Path-1.png" class="mr-4 imgEdit">Infomation Technology <small class="text-muted">(Approved)</small>
+                                            <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                        </h5>
+                                    </a>
+                                </div>
+                        
+                                <!-- Card body -->
+                                <div class="collapse show borderd border-top-0 collapseActivit" role="tabpanel" aria-labelledby="headingOne1"
+                                    data-parent="#accordionActivities">
+                                    <div class="card-body">
+                                        <div class="addDetails p-2">
+                                            <div class="container">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Activity</label>
+                                                                <select class="form-control">
+                                                                    <option><a href="#">portable Communications Devices</a></option>
+                                                                    <option><a href="#">Activity 1</a></option>
+                                                                    <option><a href="#">Activity 2</a></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Sub Category</label>
+                                                                <select class="form-control">
+                                                                    <option><a href="#">portable Communications Devices</a></option>
+                                                                    <option><a href="#">Activity 1</a></option>
+                                                                    <option><a href="#">Activity 2</a></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Sub Category</label>
+                                                                <select class="form-control">
+                                                                    <option><a href="#">portable Communications Devices</a></option>
+                                                                    <option><a href="#">Activity 1</a></option>
+                                                                    <option><a href="#">Activity 2</a></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Sub Category</label>
+                                                                <select class="form-control">
+                                                                    <option><a href="#">portable Communications Devices</a></option>
+                                                                    <option><a href="#">Activity 1</a></option>
+                                                                    <option><a href="#">Activity 2</a></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="row">
+                                                    <div class="col-lg-1"></div>
+                                                    <div class="col-lg-10 col-12">
+                                                        <div class="card mt-2 mb-3">
+                                                            <div class="card-header p-1">
+                                                                <h5>Similer Projects</h5>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-lg-1">
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="form-group">
+                                                                            <label>Targeted Company</label>
+                                                                            <input type="text"  class="form-control" placeholder="Type Your Target Company"
+                                                                                aria-describedby="helpId">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="form-group">
+                                                                            <label>Location</label>
+                                                                            <select class="form-control">
+                                                                                <option selected><a href="#">Select a country</a></option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-1"></div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="form-group">
+                                                                            <label>Phone Number</label>
+                                                                            <input type="text" class="form-control" placeholder="Type Your Telephone Number"
+                                                                                aria-describedby="helpId">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="form-group">
+                                                                            <label>Project Title</label>
+                                                                            <input type="text" class="form-control" placeholder="Add your Project title"
+                                                                                aria-describedby="helpId">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-1"></div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="form-group">
+                                                                            <label>Project Purpose</label>
+                                                                            <input type="text" class="form-control" placeholder="Add your Project purpose"
+                                                                                aria-describedby="helpId">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="form-group">
+                                                                            <label>Aearded Value</label>
+                                                                            <input type="text"  class="form-control" placeholder="Add the Awarded Value"
+                                                                                aria-describedby="helpId">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-1"></div>
+                                                                    <div class="col-lg-10 col-md-10">
+                                                                        <div class="form-group">
+                                                                            <label>Upload Document</label>
+                                                                            <input type="file"  class="form-control" placeholder="Add the Awarded Value"
+                                                                                aria-describedby="helpId">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-1"></div>
+                                                                    <div class="col-lg-5 col-md-5">
+                                                                        <label>Allocated Scope</label><br>
+                                                                        <button class="btn btnAll">All</button>
+                                                                        <button class="btn btnAll ml-2">Part</button>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5">
+                                                                       <label>Specify</label>
+                                                                       <input type="text"  class="form-control" placeholder="Add Specifies"
+                                                                                aria-describedby="helpId"> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btnClickAddAccount mt-1"><i class="fa fa-plus-circle"></i> Add more projects</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                        
                             </div>
+                            <!-- Accordion card -->
+                        </div>
+                        <div class="addMore p-3">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-1"></div>
+                                    <div class="col-lg-10">
+                                        <button class="btn btnClickAddAccount"><i class="fa fa-plus-circle"></i> Add more activities</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     <div id="branches" class="tab-pane p-0 container">
@@ -712,7 +858,7 @@
                                                         <div class="col-lg-5 col-md-5 ">
                                                             <div class="form-group">
                                                                 <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
-                                                                <input type="number"  class="form-control" placeholder="Add fax number"
+                                                                <input type="text"  class="form-control" placeholder="Add fax number"
                                                                     aria-describedby="helpId">
                                                             </div>
                                                         </div>
@@ -774,7 +920,7 @@
                                                                     <div class="col-lg-5 col-md-5 ">
                                                                         <div class="form-group">
                                                                             <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
-                                                                            <input type="number"  class="form-control" placeholder="Add fax number"
+                                                                            <input type="text"  class="form-control" placeholder="Add fax number"
                                                                                 aria-describedby="helpId">
                                                                         </div>
                                                                     </div>
@@ -807,15 +953,15 @@
                                     <div class="col-1"></div>
                                     <div class="col-lg-10">
                                         <!--Accordion wrapper-->
-                                        <div class="accordion md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                        <div class="accordion md-accordion mt-5 mb-5" id="accordionExU" role="tablist" aria-multiselectable="true">
                                         
                                             <!-- Accordion card -->
                                             <div class="card  firstUploadCollapse">
                                         
                                                 <!-- Card header -->
                                                 <div class="card-header p-3" role="tab">
-                                                    <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseOne1" aria-expanded="true"
-                                                        aria-controls="collapseOne1">
+                                                    <a data-toggle="collapse" data-parent="#accordionExU" href=".collapseOneU" aria-expanded="true"
+                                                        aria-controls="collapseOneU">
                                                         <h5 class="m-0 border-bottom-0">
                                                             Partnership deed or memorandum of article of association 
                                                             <i class="float-right fas fa-angle-down rotate-icon"></i>
@@ -824,8 +970,8 @@
                                                 </div>
                                         
                                                 <!-- Card body -->
-                                                <div  class="collapse borderd border-top-0 collapseOne1" role="tabpanel" aria-labelledby="headingOne1"
-                                                    data-parent="#accordionEx">
+                                                <div  class="collapse borderd border-top-0 collapseOneU" role="tabpanel" aria-labelledby="headingOne1"
+                                                    data-parent="#accordionExU">
                                                     <div class="card-body">
                                                        <p class="text-center p-2">
                                                         It’s a set of formal documents filed with a government body 
@@ -974,13 +1120,17 @@
         <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
         <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
         <script type="text/javascript">
-            $(function() {
-                $('.thefiles').FancyFileUpload({
-                    params : {
-                        action : 'fileuploader'
-                    },
-                    maxfilesize : 1000000
-                });
+           
+            $('.thefiles').FancyFileUpload({
+                params : {
+                    action : 'fileuploader'
+                },
+                edit : false,
+                maxfilesize : 1000000,
+                added : function(e, data) {
+                    // It is okay to simulate clicking the start upload button.
+                    this.find('.ff_fileupload_actions button.ff_fileupload_start_upload').click();
+                }
             });
 
         </script>
