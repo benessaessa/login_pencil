@@ -592,7 +592,7 @@ box-shadow: none;
 .compAdd label{
   font-size: 18px;
 }
-.editDetails{
+.editDetails,.bankSave,.activitiesHide,.hideBran,.hideUpload,.showUploadDoc{
   display: none;
 }
 .compAdd p{

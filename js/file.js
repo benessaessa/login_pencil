@@ -48,6 +48,26 @@ $(".accordion h5>.fa-angle-down, .accordion h5>.fa-angle-up").on("click",functio
 
 	$('.editBtn').click(function(evt){
 		evt.preventDefault();
-		$('#companyDetailsShow').hide();
-		$('.editDetails').show();
+		$('.companyDetailHide').slideUp('slow');
+		$('.editDetails').slideDown('slow');
+	});
+	$('.btnEditBank').click(function(evt){
+		evt.preventDefault();
+		$('.bankEdit').slideUp('slow');
+		$('.bankSave').slideDown('slow');
+	});
+	$('.btnEditAct').click(function(evt){
+		evt.preventDefault();
+		$('.showAct').slideUp('slow');
+		$('.activitiesHide').slideDown('slow');
+	});
+	$('.btnEditBran').click(function(evt){
+		evt.preventDefault();
+		$('.showBran').slideUp('slow');
+		$('.hideBran').slideDown('slow');
+	});
+	$('.btnEditUpload').click(function(evt){
+		evt.preventDefault();
+		$('.hideUploadDoc').slideUp('slow');
+		$('.showUploadDoc').slideDown('slow');
 	});

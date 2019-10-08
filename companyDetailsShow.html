@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="fancy-file-uploader/fancy_fileupload.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/style.css">
+        <title>Show Details</title>
+    </head>
+    <body>
+        <header class="pt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-8 col-7">
+                        <img  src="images/sumed.png">
+                    </div>
+                    <div class="col-lg-1 col-1">
+                        
+                        <div class="dropdown drpDown float-right">
+                                <a href="#" class="mt-3" type="button" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img class="notification" src="images/notifications-none.svg">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="notificationDropdown" id="notificationDropdownMenu">
+                                    <div class='text-center mb-1'><b>Notifications</b></div>
+                                    <a class="dropdown-item dropdown-item-special" href="#">
+                                        <span><img src="images/true.png"></span>
+                                        <span>Your account has been successfully approved by<b> Arab Petroleum <br> Pipelines Co. SUMED </b>information system</span>
+                                    </a>
+                                    <a class="dropdown-item dropdown-item-special" href="#">
+                                        <span><img src="images/reject.svg"></span>
+                                        <span>Your account has been Rejected by <b> Arab Petroleum Pipelines<br> Co. SUMED </b> information system</span>
+                                    </a>
+                            
+                                    <a class="dropdown-item dropdown-item-special" href="#">
+                                        <span><img src="images/rej.png"></span>
+                                        <span>Your VAT Certificate is going to get expired in two weeks, please <br> make sure to replace it with a valid one.</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="col-1">
+                        <div class="vl"></div>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-2 text-right pt-2">
+                        
+                        <div class="dropdown">
+                                <span  class="dropdown-toggle font-weight-bold" data-toggle="dropdown">
+                                    ADONC &nbsp;&nbsp;
+                                </span>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item dropdown-item-special border-top-0" href="#"><i class="fas fa-cog mr-1"></i> Account Setting</a>
+                                <a class="dropdown-item dropdown-item-special" href="#"><i class="fa fa-comment-dots mr-1"></i> Contact Us</a>
+                                <a class="dropdown-item dropdown-item-special" href="#"><i class="fa fa-sign-out-alt mr-1"></i>Logout</a>
+                            </div>
+                        </div>
+                        <small>International Company</small>
+                    </div>
+                </div>
+            </div>
+        </header><br>
+            <div class="container">
+                <div class="txtReview mt-4 mb-5"><br>
+                    <div class="media">
+                        <img src="images/warning.svg" class="mr-3 ml-4" alt="...">
+                        <div class="media-body">
+                            <h6 class="mt-0">Account Status</h6>
+                            <p class="font-weight-bold">Pending Approval: Sumid team is reviewing your data and will get back to you soon.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="txtSuccess mt-4 mb-5"><br>
+                    <div class="media">
+                        <img src="images/true.png" class="mr-3 ml-4" alt="...">
+                        <div class="media-body">
+                            <h6 class="mt-0">Account Status</h6>
+                            <p class="font-weight-bold">Successfully Approved: your data is approved by Arab Petroleum Pipelines Co. SUMED information system.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="details">
+            <div class="container">
+                <div class="tabButton">
+                    <ul class="nav nav-pills text-white bg-dark flex-column flex-md-row nav-justified">
+                        <li class="nav-item border-right"><a class="nav-link active" data-toggle="pill" href="#companyDetailsShow">Company Details</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#bankAccountDetails">Bank Account</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#showActivities">Activities</a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#companyBranches"> Branches </a></li>
+                        <li class="nav-item border-right"><a class="nav-link" data-toggle="pill" href="#uploadDocuments">Upload Documents</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#submitDataShow">Submit Your Data </a></li>
+                    </ul>
+                </div>
+                <div class="tab-content">
+                    <div id="companyDetailsShow" class="tab-pane p-0  container fade active show">
+                        <form class="companyDetailHide">
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseDetails1" aria-expanded="true"
+                                            aria-controls="collapseDetails1">
+                                            <h5 class="mb-2 border-0">
+                                                Basic Infomation
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetails1" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionEx">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="container">
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Company Address</label>
+                                                            <p class="mt-1">73 Ezzat Mohammed Selim Street, Almazah, Heliopolis</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Commercial Name</label>
+                                                            <p class="mt-1">ADNOC</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Country</label>
+                                                            <p class="mt-1">Egypt</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>City</label>
+                                                            <p class="mt-1">Cairo</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Phone Number</label>
+                                                            <p class="mt-1">0123456789</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Fax Number</label>
+                                                            <p class="mt-1">0020</p>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+
+                            </div>
+
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionDetail2" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionDetail2" href=".collapseDetailShow" aria-expanded="true"
+                                            aria-controls="collapseDetailShow">
+                                            <h5 class="mb-2 border-0">
+                                                Contacts
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetailShow" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionEx">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Contact Person</label>
+                                                            <p class="mt-1">Hend Ibrahim</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Contact Role</label>
+                                                            <p class="mt-1">Account Manager</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Phone Number</label>
+                                                            <p class="mt-1">0123456789</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Fax Number</label>
+                                                            <p class="mt-1">0020</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionDetail3" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionDetail3" href=".collapseDetailShow3" aria-expanded="true"
+                                            aria-controls="collapseDetailShow3">
+                                            <h5 class="mb-2 border-0">
+                                                    Agent Information
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetailShow3" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionDetail3">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Agent Name</label>
+                                                            <p class="mt-1">Ahmed Ali</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Country</label>
+                                                            <p class="mt-1">Saudi Arabia</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Phone Number</label>
+                                                            <p class="mt-1">0123456789</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Email Address</label>
+                                                            <p class="mt-1">ahmed.ali@gmail.com</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div><br>
+                            <p class="text-right"><button class="btn btnSubmit editBtn">Edit Company Details</button></p>
+                        </form>
+                        <div class="editDetails">
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionExEx" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionExEx" href=".collapseDetailsBs" aria-expanded="true"
+                                            aria-controls="collapseDetailsBs">
+                                            <h5 class="mb-2 border-0">
+                                                Basic Infomation
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetailsBs" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionExEx">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="container">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Company Address</label>
+                                                                <input type="text" class="form-control inputFieldStyle"
+                                                                    placeholder="73 Ezzat Mohammed Selim Street, Almazah, Heliopolis"
+                                                                    aria-describedby="helpId">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Commercial Name</label> <span class="float-right"><small>(Optional)</small></span>
+                                                                <input type="text" class="form-control" placeholder="Add your commercial name"
+                                                                    aria-describedby="helpId">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Country</label>
+                                                                <select class="form-control">
+                                                                    <option><a href="#">Egypt</a></option>
+                                                                    <option><a href="#">Tunis</a></option>
+                                                                    <option><a href="#">England</a></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>City</label>
+                                                                <select class="form-control">
+                                                                    <option><a href="#">Cairo</a></option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Phone Number</label>
+                                                                <input type="tel"  class="form-control"
+                                                                    placeholder="Add your company phone" aria-describedby="helpId">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
+                                                                <input type="text"  class="form-control"
+                                                                    placeholder="Enter Your Fax Number" aria-describedby="helpId">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label>Website</label><span class="float-right"><small>(Optional)</small></span>
+                                                                <input type="text"  class="form-control"
+                                                                    placeholder="Add your company website" aria-describedby="helpId">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-5 ">
+                                                            <div class="form-group">
+                                                                <label> Corporate Email</label><span class="float-right"><small>(Optional)</small></span>
+                                                                <input type="email"  class="form-control"
+                                                                    placeholder="Add a corporate email" aria-describedby="helpId">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+                            
+                            <div class="accordion md-accordion mt-5 mb-5" id="accordionEx2" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionEx2" href=".collapseDetails2" aria-expanded="true"
+                                            aria-controls="collapseDetails2">
+                                            <h5 class="mb-2 border-bottom-0">
+                                                    Contacts
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetails2" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionEx2">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="container">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Contact Person</label>
+                                                                    <input type="text"  class="form-control" placeholder="Add contact person"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Contact Role</label>
+                                                                    <input type="text"  class="form-control" placeholder="Add the role"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Phone Number</label>
+                                                                    <input type="tel"  class="form-control" placeholder="Add your company phone"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
+                                                                    <input type="text"  class="form-control" placeholder="Add your Fax Number"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div> 
+                                                        
+                                                    </form>
+                                                    <div class="row">
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-10 col-12">
+                                                            <div class="card mt-2">
+                                                                <div class="card-header p-1">
+                                                                    <h5>Second Contact <span class="float-right"><img src="images/bin.svg"></span></h5>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Contact Person</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add contact person"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Contact Role</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add the role"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                    
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Phone Number</label>
+                                                                                <input type="tel"  class="form-control" placeholder="Add your company phone"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Fax Number</label>
+                                                                                <input type="text" pattern="[0-9]{9}" class="form-control" placeholder="Add your company phone"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5">
+                                                            <button class="mt-3 btnClickAddContact border-0"><i class="fa fa-plus-circle"></i> Add more contacts</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+                            
+                            <div class="accordion md-accordion mt-5 mb-5" id="accordionEx3" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionEx3" href=".collapseDetails3" aria-expanded="true"
+                                            aria-controls="collapseDetails3">
+                                            <h5 class="mb-2 border-bottom-0">
+                                                    Agent Information
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetails3" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionEx3">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="container">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Agent Name</label>
+                                                                    <input type="text"  class="form-control" placeholder="Add contact person"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Country</label>
+                                                                    <select class="form-control">
+                                                                        <option selected><a href="#">Select a country</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Phone Number</label>
+                                                                    <input type="tel"  class="form-control" placeholder="Add phone number"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Email Address</label>
+                                                                    <input type="email"  class="form-control" placeholder="Add email address"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                    
+                                                        </div>
+                                                        
+                                                    </form>
+                                                    <div class="row">
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-10 col-12">
+                                                            <div class="card mt-2">
+                                                                <div class="card-header p-1">
+                                                                    <h5>Second Agent <span class="float-right"><img src="images/bin.svg"></span></h5>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Agent Name</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add agent name"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Country</label>
+                                                                                <select class="form-control">
+                                                                                    <option selected><a href="#">Select a country</a></option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Phone Number</label>
+                                                                                <input type="tel"  class="form-control" placeholder="Add phone number"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Email Address</label>
+                                                                                <input type="email"  class="form-control" placeholder="Add email address"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-1"></div>
+                                                        <div class="col-lg-5">
+                                                            <button class="mt-3 btnClickAddContact border-0"><i class="fa fa-plus-circle"></i> Add more agents </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+    
+                            <button type="submit" class="btn btnSubmit float-right mb-2">Save Changes </button><br>
+                        </div>
+                    </div>
+                    
+                    <div id="bankAccountDetails" class="tab-pane p-0 container">
+                        <form class="bankEdit">
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionDetail3" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionDetail3" href=".collapseDetailShow3" aria-expanded="true"
+                                            aria-controls="collapseDetailShow3">
+                                            <h5 class="mb-2 border-0">
+                                                    Bank Information
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetailShow3" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionDetail3">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Name</label>
+                                                            <p class="mt-1">Commercial International Bank</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Abbreviation</label>
+                                                            <p class="mt-1">CIB</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Swift Code</label>
+                                                            <p class="mt-1">CIBEEGCX002</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Account Number</label>
+                                                            <p class="mt-1">1245548954</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Country</label>
+                                                            <p class="mt-1">Egypt</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Country</label>
+                                                            <p class="mt-1">----</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <p class="text-right"><button class="btn btnSubmit btnEditBank">Edit Bank Account</button></p>
+                        </form>
+                        <div class="bankSave p-0 container">
+                            <div class="accordion md-accordion mt-5 mb-5" id="accordionBank" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionBank" href=".collapseBank" aria-expanded="true"
+                                            aria-controls="collapseBank">
+                                            <h5 class="mb-2 border-bottom-0">
+                                                Bank Infomation
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseBank" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionBank">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="container">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-1">
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Name</label>
+                                                                    <input type="text"  class="form-control" placeholder="Add your company bank"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Abbreviation</label><span class="float-right"><small>(Optional)</small></span>
+                                                                    <input type="text"  class="form-control" placeholder="e.g CIB"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>SWIFT Code</label><span class="float-right"><small>(Optional)</small></span>
+                                                                    <input type="text" class="form-control" placeholder="Add your bank swift code"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>IBAN Code</label><span class="float-right"><small>(Optional)</small></span>
+                                                                    <input type="text" class="form-control" placeholder="Add your account number"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Country</label>
+                                                                    <select class="form-control">
+                                                                        <option selected><a href="#">Select a country</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Account Number</label>
+                                                                    <input type="text"  class="form-control" placeholder="Add your account number"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="row">
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-10 col-12">
+                                                            <div class="card mt-2">
+                                                                <div class="card-header p-1">
+                                                                    <h5>Second Account<span class="float-right"><img src="images/bin.svg"></span></h5>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-1">
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Name</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add your company bank"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Abbreviation</label>
+                                                                                <input type="text"  class="form-control" placeholder="e.g CIB"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>SWIFT Code</label>
+                                                                                <input type="text" class="form-control" placeholder="Add your bank swift code"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>IBAN Code</label>
+                                                                                <input type="text" class="form-control" placeholder="Add your account number"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Country</label>
+                                                                                <select class="form-control">
+                                                                                    <option selected><a href="#">Select a country</a></option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Account Number</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add your account number"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-7 linkAdd">
+                                                            <button class="mt-3 btnClickAddAccount border-0 bg-white"><i class="fa fa-plus-circle"></i> &nbsp; Add more accounts</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+                            
+                            <button type="submit" class="btn btnSubmit float-right mb-2">Save Changes </button><br>
+                        </div>
+                    </div>
+
+                    <div id="showActivities" class="tab-pane p-0 container">
+                        <form class="showAct">
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionActShow" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionActShow" href=".collapseActiv" aria-expanded="true"
+                                            aria-controls="collapseActiv">
+                                            <h5 class="mb-2 border-0">
+                                                    Information Technology
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseActiv" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionActShow">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Activity</label>
+                                                            <p class="mt-1">Information Technology</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Sub Category</label>
+                                                            <p class="mt-1">ِApplication</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Sub Category</label>
+                                                            <p class="mt-1">ERB</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Sub Category</label>
+                                                            <p class="mt-1">Oracle</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-1"></div>
+                                                    <div class="col-lg-10 col-12">
+                                                        <div class="card mt-2">
+                                                            <div class="card-header p-1">
+                                                                <h5>Similer Projects</h5>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="row mt-3">
+                                                                    <div class="col-1">
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Targeted Company</label>
+                                                                            <p class="mt-1">RWE Group</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Location</label>
+                                                                            <p class="mt-1">Egypt</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mt-3">
+                                                                    <div class="col-1">
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Phone Number</label>
+                                                                            <p class="mt-1">01114205243</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Project Title</label>
+                                                                            <p class="mt-1">RWE Portal</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mt-3">
+                                                                    <div class="col-1">
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Project Purpose</label>
+                                                                            <p class="mt-1">New Software System</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Awarded Value</label>
+                                                                            <p class="mt-1">100 Million $ </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mt-3">
+                                                                    <div class="col-1">
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Allocated Scope</label>
+                                                                            <p class="mt-1">Part</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Specify</label>
+                                                                            <p class="mt-1">IT</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mt-3">
+                                                                    <div class="col-1">
+                                                                    </div>
+                                                                    <div class="col-lg-5 col-md-5 ">
+                                                                        <div class="compAdd">
+                                                                            <label>Upload Document</label>
+                                                                            <p class="mt-1">RWE_Portal_project.pdf</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionActShow2" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionActShow2" href=".collapseActiv2" aria-expanded="true"
+                                            aria-controls="collapseActiv2">
+                                            <h5 class="mb-2 border-0">
+                                                    Office Furniture
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse borderd border-top-0 collapseActiv2" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionActShow2">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="row">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Activity</label>
+                                                            <p class="mt-1">Information Technology</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Sub Category</label>
+                                                            <p class="mt-1">ِApplication</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <p class="text-right"><button class="btn btnSubmit btnEditAct">Edit  Activities </button></p>
+                        </form>
+                        <div class="activitiesHide container">
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionActivities" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionActivities" href=".collapseActivit" aria-expanded="true"
+                                            aria-controls="collapseActivit">
+                                            <h5 class="mb-2 border-0">
+                                                    <img src="images/Path-1.png" class="mr-4 imgEdit">Infomation Technology <small class="text-muted">(Approved)</small>
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseActivit" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionActivities">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="container">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Activity</label>
+                                                                    <select class="form-control">
+                                                                        <option><a href="#">portable Communications Devices</a></option>
+                                                                        <option><a href="#">Activity 1</a></option>
+                                                                        <option><a href="#">Activity 2</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Sub Category</label>
+                                                                    <select class="form-control">
+                                                                        <option><a href="#">portable Communications Devices</a></option>
+                                                                        <option><a href="#">Activity 1</a></option>
+                                                                        <option><a href="#">Activity 2</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Sub Category</label>
+                                                                    <select class="form-control">
+                                                                        <option><a href="#">portable Communications Devices</a></option>
+                                                                        <option><a href="#">Activity 1</a></option>
+                                                                        <option><a href="#">Activity 2</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Sub Category</label>
+                                                                    <select class="form-control">
+                                                                        <option><a href="#">portable Communications Devices</a></option>
+                                                                        <option><a href="#">Activity 1</a></option>
+                                                                        <option><a href="#">Activity 2</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="row">
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-10 col-12">
+                                                            <div class="card mt-2 mb-3">
+                                                                <div class="card-header p-1">
+                                                                    <h5>Similer Projects</h5>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-1">
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Targeted Company</label>
+                                                                                <input type="text"  class="form-control" placeholder="Type Your Target Company"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Location</label>
+                                                                                <select class="form-control">
+                                                                                    <option selected><a href="#">Select a country</a></option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Phone Number</label>
+                                                                                <input type="text" class="form-control" placeholder="Type Your Telephone Number"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Project Title</label>
+                                                                                <input type="text" class="form-control" placeholder="Add your Project title"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Project Purpose</label>
+                                                                                <input type="text" class="form-control" placeholder="Add your Project purpose"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Aearded Value</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add the Awarded Value"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-1"></div>
+                                                                        <div class="col-lg-10 col-md-10">
+                                                                            <div class="form-group">
+                                                                                <label>Upload Document</label>
+                                                                                <input type="file"  class="form-control" placeholder="Add the Awarded Value"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-1"></div>
+                                                                        <div class="col-lg-5 col-md-5">
+                                                                            <label>Allocated Scope</label><br>
+                                                                            <button class="btn btnAll">All</button>
+                                                                            <button class="btn btnAll ml-2">Part</button>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5">
+                                                                           <label>Specify</label>
+                                                                           <input type="text"  class="form-control" placeholder="Add Specifies"
+                                                                                    aria-describedby="helpId"> 
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button class="btn btnClickAddAccount mt-1"><i class="fa fa-plus-circle"></i> Add more projects</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+                            <div class="addMore p-3">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-1"></div>
+                                        <div class="col-lg-10">
+                                            <button class="btn btnClickAddAccount"><i class="fa fa-plus-circle"></i> Add more activities</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn mt-3 btnSubmit float-right mb-2">Save Changes </button><br>
+                        </div>
+                    </div>
+
+                    <div id="companyBranches" class="tab-pane p-0 container">
+                        <form class="showBran">
+                            <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionDetail3" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionDetail3" href=".collapseDetailShow3" aria-expanded="true"
+                                            aria-controls="collapseDetailShow3">
+                                            <h5 class="mb-2 border-0">
+                                                    Branch Information
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseDetailShow3" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionDetail3">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="row">
+                                                    <div class="col-1 ordList"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Name</label>
+                                                            <p class="mt-1">ADNOC Riyadh Office</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Address</label>
+                                                            <p class="mt-1">Olaya St, Riyadh 12213, Saudi Arabia</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Country</label>
+                                                            <p class="mt-1">KSA</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>City</label>
+                                                            <p class="mt-1">Riyadh</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3">
+                                                    <div class="col-1"></div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Email Address</label>
+                                                            <p class="mt-1">info@asnocgroup.com</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5 col-md-5 ">
+                                                        <div class="compAdd">
+                                                            <label>Fax</label>
+                                                            <p class="mt-1">9875</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <p class="text-right"><button class="btn btnSubmit btnEditBran">Edit Branches</button></p>
+                            
+                        </form>
+                        <div class="hideBran p-0 container">
+                            <div class="accordion md-accordion mt-5 mb-5" id="accordionBank" role="tablist" aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card border-0 firstUploadCollapse">
+                            
+                                    <!-- Card header -->
+                                    <div class="card-header bg-white p-3" role="tab">
+                                        <a data-toggle="collapse" data-parent="#accordionBank" href=".collapseBank" aria-expanded="true"
+                                            aria-controls="collapseBank">
+                                            <h5 class="mb-2 border-bottom-0">
+                                                Branches Infomation
+                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                        </a>
+                                    </div>
+                            
+                                    <!-- Card body -->
+                                    <div class="collapse show borderd border-top-0 collapseBank" role="tabpanel" aria-labelledby="headingOne1"
+                                        data-parent="#accordionBank">
+                                        <div class="card-body">
+                                            <div class="addDetails p-2">
+                                                <div class="container">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-lg-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Name</label><span class="float-right"><small>(Optional)</small></span>
+                                                                    <input type="text"  class="form-control" placeholder="Add the name"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Address</label>
+                                                                    <input type="text"  class="form-control" placeholder="Add your address"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Country</label>
+                                                                    <select class="form-control">
+                                                                        <option selected><a href="#">Select a Country</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>City</label>
+                                                                    <select class="form-control">
+                                                                        <option selected><a href="#">Select a City</a></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-1"></div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Email Address</label>
+                                                                    <input type="email"  class="form-control" placeholder="Add the email"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-5 col-md-5 ">
+                                                                <div class="form-group">
+                                                                    <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
+                                                                    <input type="text"  class="form-control" placeholder="Add fax number"
+                                                                        aria-describedby="helpId">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="row">
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-10 col-12">
+                                                            <div class="card mt-2">
+                                                                <div class="card-header p-1">
+                                                                    <h5>Second Branch<span class="float-right"><img src="images/bin.svg"></span></h5>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                        <div class="row">
+                                                                        <div class="col-lg-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Name</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add the name"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Address</label>
+                                                                                <input type="text"  class="form-control" placeholder="Add your address"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Country</label>
+                                                                                <select class="form-control">
+                                                                                    <option selected><a href="#">Select a Country</a></option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>City</label>
+                                                                                <select class="form-control">
+                                                                                    <option selected><a href="#">Select a City</a></option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-1"></div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Email Address</label>
+                                                                                <input type="email"  class="form-control" placeholder="Add the email"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-5 col-md-5 ">
+                                                                            <div class="form-group">
+                                                                                <label>Fax Number</label><span class="float-right"><small>(Optional)</small></span>
+                                                                                <input type="text"  class="form-control" placeholder="Add fax number"
+                                                                                    aria-describedby="helpId">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-lg-1"></div>
+                                                        <div class="col-lg-7 linkAdd">
+                                                            <button class="mt-3 btnClickAddAccount border-0 bg-white"><i class="fa fa-plus-circle"></i> &nbsp; Add more branches</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                                <!-- Accordion card -->
+                            </div><br>
+                            
+                            <button type="submit" class="btn btnSubmit float-right mb-2">Save Changes</button><br>
+                        </div>
+                    </div>
+
+                    <div id="uploadDocuments" class="tab-pane p-0 container">
+                        <form class="hideUploadDoc">
+                            <div class="uploadDocuments mt-5 mb-5">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-lg-10">
+                                        
+                                            <div class="accordion md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                            
+                                                <!-- Accordion card -->
+                                                <div class="card firstUploadCollapse">
+                                            
+                                                    <!-- Card header -->
+                                                    <div class="card-header p-3" role="tab">
+                                                        <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseOne2" aria-expanded="true"
+                                                            aria-controls="collapseOne2">
+                                                            <h5 class="m-0 border-bottom-0">
+                                                                Partnership deed or memorandum of article of association 
+                                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                            
+                                                    <!-- Card body -->
+                                                    <div  class="collapse show border-top-0 collapseOne2" role="tabpanel" aria-labelledby="headingOne1"
+                                                        data-parent="#accordionEx">
+                                                        <div class="card-body uploadShow">
+                                                        <p class="text-center p-2">
+                                                            It’s a set of formal documents filed with a government body 
+                                                            to legally document the creation of a corporation. Articles of incorporation must 
+                                                            contain pertinent information such as the firm's name, street address, 
+                                                            agent for service of process and the amount and type of stock to be issued.
+                                                        </p>
+                                                        <div class="bg-white pt-2">
+                                                            <p><img src="images/pdfUpload.png" class="mr-2 pb-2"> Mohamed_Essa.pdf</p>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- Accordion card -->
+                                                
+                                            </div>
+                                            <!-- Accordion wrapper -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-right"><button class="btn btnSubmit btnEditUpload">Edit Upload Documents</button></p>
+                        </form> 
+                        <div class="container showUploadDoc">
+                            <div class="uploadDocuments mt-5 mb-5">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-1"></div>
+                                        <div class="col-lg-10">
+                                            <!--Accordion wrapper-->
+                                            <div class="accordion md-accordion mt-5 mb-5" id="accordionExU" role="tablist" aria-multiselectable="true">
+                                            
+                                                <!-- Accordion card -->
+                                                <div class="card  firstUploadCollapse">
+                                            
+                                                    <!-- Card header -->
+                                                    <div class="card-header p-3" role="tab">
+                                                        <a data-toggle="collapse" data-parent="#accordionExU" href=".collapseOneU" aria-expanded="true"
+                                                            aria-controls="collapseOneU">
+                                                            <h5 class="m-0 border-bottom-0">
+                                                                Partnership deed or memorandum of article of association 
+                                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                            
+                                                    <!-- Card body -->
+                                                    <div  class="collapse borderd border-top-0 collapseOneU" role="tabpanel" aria-labelledby="headingOne1"
+                                                        data-parent="#accordionExU">
+                                                        <div class="card-body">
+                                                           <p class="text-center p-2">
+                                                            It’s a set of formal documents filed with a government body 
+                                                            to legally document the creation of a corporation. Articles of incorporation must 
+                                                            contain pertinent information such as the firm's name, street address, 
+                                                            agent for service of process and the amount and type of stock to be issued.
+                                                           </p>
+                                                           <div class="container exDate">
+                                                               <div class="row">
+                                                                   <div class="col-lg-12 col-12">
+    
+                                                                    <form class="form-inline justify-content-center text-center mb-2">
+                                                                        <div class="form-group">
+                                                                            <label class="font-weight-bold mr-2">Start Date</label>
+                                                                            <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                    
+                                                                            <label class="font-weight-bold ml-4 mr-2">Expire date</label>
+                                                                            <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                        </div>
+                                                                        <div class="container text-center">
+                                                                            <p class="mt-3">Drag & Drop or click in the box to upload Files</p>
+                                                                            <input class="thefiles" type="file" name="files" accept=".pdf" multiple>
+                                                                            <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
+                                                                        </div>
+                                                                    </form>
+                                                                        
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+    
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- Accordion card -->
+                                                
+                                            </div>
+                                            <div class="accordion md-accordion mt-5 mb-5" id="accordionEx" role="tablist" aria-multiselectable="true">
+                                            
+                                                <!-- Accordion card -->
+                                                <div class="card  firstUploadCollapse">
+                                            
+                                                    <!-- Card header -->
+                                                    <div class="card-header p-3" role="tab">
+                                                        <a data-toggle="collapse" data-parent="#accordionEx" href=".collapseOne2" aria-expanded="true"
+                                                            aria-controls="collapseOne2">
+                                                            <h5 class="m-0 border-bottom-0">
+                                                                Partnership deed or memorandum of article of association 
+                                                                <i class="float-right fas fa-angle-down rotate-icon"></i>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                            
+                                                    <!-- Card body -->
+                                                    <div  class="collapse borderd border-top-0 collapseOne2" role="tabpanel" aria-labelledby="headingOne1"
+                                                        data-parent="#accordionEx">
+                                                        <div class="card-body">
+                                                           <p class="text-center p-2">
+                                                            It’s a set of formal documents filed with a government body 
+                                                            to legally document the creation of a corporation. Articles of incorporation must 
+                                                            contain pertinent information such as the firm's name, street address, 
+                                                            agent for service of process and the amount and type of stock to be issued.
+                                                           </p>
+                                                           <div class="container exDate">
+                                                               <div class="row">
+                                                                   <div class="col-lg-12 col-12">
+    
+                                                                    <form class="form-inline justify-content-center text-center mb-2">
+                                                                        <div class="form-group">
+                                                                            <label class="font-weight-bold mr-2">Start Date</label>
+                                                                            <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                    
+                                                                            <label class="font-weight-bold ml-4 mr-2">Expire date</label>
+                                                                            <input type="date" class="form-control" placeholder="" aria-describedby="helpId">
+                                                                        </div>
+                                                                        <div class="container text-center">
+                                                                            <p class="mt-3">Drag & Drop or click in the box to upload Files</p>
+                                                                            <input class="thefiles" type="file" name="files" accept=".pdf" multiple>
+                                                                            <p class="mt-2">We support pdf only (up to 3 files). Make sure that your files are not more than 5 MB.</p>
+                                                                        </div>
+                                                                    </form>
+                                                                        
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+    
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <!-- Accordion card -->
+                                                
+                                            </div>
+                                            <!-- Accordion wrapper -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btnSubmit float-right mb-2">Save Changes </button><br>
+                        </div>   
+                    </div>
+
+                    <div id="submitDataShow" class="tab-pane">
+                        <div class="submitDataShow pt-5 mt-5 pb-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-lg-10">
+                                        <h2 class="text-center font-weight-bold">Your Data Has Been Successfully Submitted</h2><br>
+                                        <p class="text-center">
+                                            Please note that you can’t edit any changes to your account till you got a response, for any further assistance, contact us
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-center mt-4 mb-4"><button class="btn btnSubmit font-weight-bold">Contact Us</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="text-center text-white pt-4 pb-3 mt-5">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                <li class="list-inline-item"><i class="fa fa-circle fa-xs"></i></li>
+                <li class="list-inline-item"><a href="#">Terms and Conditions</a></li>
+                <li class="list-inline-item"><i class="fa fa-circle fa-xs"></i></li>
+                <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            </ul>
+        </footer>
+        <!-- End Of Footer -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
+        <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+        <script src="js/file.js"></script>
+        <script type="text/javascript">
+           
+            $('.thefiles').FancyFileUpload({
+                params : {
+                    action : 'fileuploader'
+                },
+                edit : false,
+                maxfilesize : 1000000,
+                added : function(e, data) {
+                    // It is okay to simulate clicking the start upload button.
+                    this.find('.ff_fileupload_actions button.ff_fileupload_start_upload').click();
+                }
+            });
+
+        </script>
+        <script type="text/javascript">
+            
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-36251023-1']);
+              _gaq.push(['_setDomainName', 'jqueryscript.net']);
+              _gaq.push(['_trackPageview']);
+            
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+            
+        </script>
+    </body>
+</html>

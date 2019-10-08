@@ -13,28 +13,51 @@
         <title>Company Details</title>
     </head>
     <body>
-        <header class="pt-2 mb-4">
+        <header class="pt-2">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-sm-8 col-7">
-                        <img src="images/sumed.png">
+                        <img  src="images/sumed.png">
                     </div>
-                    <div class="col-lg-1 pt-3 col-1">
-                        <p class="text-right"><a href="#"><img class="notification" src="images/notifications-none.svg"></a></p>
+                    <div class="col-lg-1 col-1">
+                        
+                        <div class="dropdown drpDown float-right">
+                                <a href="#" class="mt-3" type="button" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <img class="notification" src="images/notifications-none.svg">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="notificationDropdown" id="notificationDropdownMenu">
+                                    <div class='text-center mb-1'><b>Notifications</b></div>
+                                    <a class="dropdown-item dropdown-item-special" href="#">
+                                        <span><img src="images/true.png"></span>
+                                        <span>Your account has been successfully approved by<b> Arab Petroleum <br> Pipelines Co. SUMED </b>information system</span>
+                                    </a>
+                                    <a class="dropdown-item dropdown-item-special" href="#">
+                                        <span><img src="images/reject.svg"></span>
+                                        <span>Your account has been Rejected by <b> Arab Petroleum Pipelines<br> Co. SUMED </b> information system</span>
+                                    </a>
+                            
+                                    <a class="dropdown-item dropdown-item-special" href="#">
+                                        <span><img src="images/rej.png"></span>
+                                        <span>Your VAT Certificate is going to get expired in two weeks, please <br> make sure to replace it with a valid one.</span>
+                                    </a>
+                                </div>
+                            </div>
+
                     </div>
                     <div class="col-1">
                         <div class="vl"></div>
                     </div>
                     <div class="col-lg-2 col-sm-2 col-2 text-right pt-2">
-            
+                        
                         <div class="dropdown">
-                            <span class="dropdown-toggle font-weight-bold" data-toggle="dropdown">
-                                ADONC &nbsp;&nbsp;
-                            </span>
+                                <span  class="dropdown-toggle font-weight-bold" data-toggle="dropdown">
+                                    ADONC &nbsp;&nbsp;
+                                </span>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
-                                <a class="dropdown-item" href="#">Link 3</a>
+                                <a class="dropdown-item dropdown-item-special border-top-0" href="#"><i class="fas fa-cog mr-1"></i> Account Setting</a>
+                                <a class="dropdown-item dropdown-item-special" href="#"><i class="fa fa-comment-dots mr-1"></i> Contact Us</a>
+                                <a class="dropdown-item dropdown-item-special" href="#"><i class="fa fa-sign-out-alt mr-1"></i>Logout</a>
                             </div>
                         </div>
                         <small>International Company</small>
@@ -608,7 +631,7 @@
                         
                         <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
                     </div>
-                    <div id="activities" class="tab-pane container">
+                    <div id="activities" class="tab-pane p-0 container">
                         <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionActivities" role="tablist" aria-multiselectable="true">
                             <!-- Accordion card -->
                             <div class="card border-0 firstUploadCollapse">
@@ -1110,15 +1133,15 @@
             </ul>
         </footer>
         <!-- End Of Footer -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="js/file.js"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script type="text/javascript" src="fancy-file-uploader/jquery.ui.widget.js"></script>
         <script type="text/javascript" src="fancy-file-uploader/jquery.fileupload.js"></script>
         <script type="text/javascript" src="fancy-file-uploader/jquery.iframe-transport.js"></script>
         <script type="text/javascript" src="fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+        <script src="js/file.js"></script>
         <script type="text/javascript">
            
             $('.thefiles').FancyFileUpload({
