@@ -12,6 +12,16 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Company Details</title>
     </head>
+    <style>
+            @media screen and (max-width:900px){
+            .actCard{
+                padding: 0px !important;
+            }
+            .similerProj{
+                padding: 0px !important;
+            }
+        }
+    </style>
     <body>
         <header class="pt-2">
             <div class="container">
@@ -631,7 +641,7 @@
                         
                         <button type="submit" class="btn btnSubmit float-right mb-2">Save and Continue <i class="fa fa-angle-right"></i></button><br>
                     </div>
-                    <div id="activities" class="tab-pane p-0 container">
+                    <div id="activities" class="tab-pane p-0 container pb-4">
                         <div class="accordion border-0 md-accordion mt-5 mb-5" id="accordionActivities" role="tablist" aria-multiselectable="true">
                             <!-- Accordion card -->
                             <div class="card border-0 firstUploadCollapse">
@@ -701,12 +711,11 @@
                                                         </div>
                                                     </div>
                                                 </form>
-                                                <div class="row">
-                                                    <div class="col-lg-1"></div>
-                                                    <div class="col-lg-10 col-12">
+                                                <div class="actCard px-5">
+                                                    <div class="similerProj px-5">
                                                         <div class="card mt-2 mb-3">
                                                             <div class="card-header p-1">
-                                                                <h5>Similer Projects</h5>
+                                                                <h5>Similer Projects <span><img class="float-right mt-1" src="images/bin.svg"></span></h5>
                                                             </div>
                                                             <div class="card-body">
                                                                 <div class="row">
@@ -798,7 +807,7 @@
                             </div>
                             <!-- Accordion card -->
                         </div>
-                        <div class="addMore p-3">
+                        <div class="addMore p-3 mb-4">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-1"></div>
@@ -809,6 +818,7 @@
                             </div>
                             
                         </div>
+                        <button type="submit" class="btn btnSubmit float-right mt-4">Save and Continue <i class="fa fa-angle-right"></i></button><br>
                     </div>
                     <div id="branches" class="tab-pane p-0 container">
                         <div class="accordion md-accordion mt-5 mb-5" id="accordionBank" role="tablist" aria-multiselectable="true">
@@ -1171,5 +1181,6 @@
               })();
             
         </script>
+        
     </body>
 </html>
