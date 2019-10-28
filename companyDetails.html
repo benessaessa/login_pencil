@@ -21,6 +21,10 @@
                 padding: 0px !important;
             }
         }
+        .bg-scope{
+            background-color: #E78C03 !important;
+            color: white !important;
+        }
     </style>
     <body>
         <header class="pt-2">
@@ -785,10 +789,13 @@
                                                                     <div class="col-lg-1"></div>
                                                                     <div class="col-lg-5 col-md-5">
                                                                         <label>Allocated Scope</label><br>
-                                                                        <button class="btn btnAll">All</button>
-                                                                        <button class="btn btnAll ml-2">Part</button>
+                                                                        <input name="scope" class="scope" type="hidden">
+                                                                        <ul class="list-group list-group-horizontal border-0">
+                                                                            <li class="select1 list-group-item px-5">All</li>
+                                                                            <li class="select2 list-group-item px-5">&nbsp; Part &nbsp;</li>
+                                                                        </ul><br>
                                                                     </div>
-                                                                    <div class="col-lg-5 col-md-5">
+                                                                    <div class="col-lg-5 col-md-5 specify d-none">
                                                                        <label>Specify</label>
                                                                        <input type="text"  class="form-control" placeholder="Add Specifies"
                                                                                 aria-describedby="helpId"> 
@@ -1181,6 +1188,24 @@
               })();
             
         </script>
-        
+        <!-- Script of Allocate Scope -->
+        <script>
+            let activateLink = evt=>{
+            console.log(evt);
+                $(".bg-scope").removeClass("bg-scope");
+                $(evt.target).addClass("bg-scope");                
+                $(".scope").val(evt.target.innerText);
+            }
+            $('.select2').click(function(){
+                $(".specify").removeClass('d-none');
+                // $(".specify").css("dispaly","block");
+            });
+            $(".select1").click(activateLink);
+            $(".select2").click(activateLink);
+            $('.select1').click(function(){
+                $(".specify").addClass('d-none');
+                // $(".specify").css("dispaly","block");
+            });
+        </script>
     </body>
 </html>
