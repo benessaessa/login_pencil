@@ -1,5 +1,17 @@
+/* @font-face */
+/* @font-face {
+  font-family: "gellix-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ArchivoNarrow-Regular.ttf');
+  src: local("ArchivoNarrow-Regular"), url("../fonts/ArchivoNarrow-Regular.ttf") format("ttf"),url(../fonts/ArchivoNarrow-BoldItalic.ttf) format(ttf),
+  url(../fonts/ArchivoNarrow-Bold.ttf) format(ttf);
+}
+body{
+  font-family: "ArchivoNarrow-Regular";
+} */
+
 /* ================ Page Login ======================= */
-/* =================================================== */
 header{
   box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
   padding: 15px;
@@ -380,8 +392,9 @@ box-shadow: none;
 }
  
   /* .addDetails{
-    box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+    border:2px solid #a17578;
     background-color: #FFFFFF;
+    padding-top: 2rem !important;
   } */
 .addDetails .form-control{
   border: none;
@@ -579,6 +592,7 @@ box-shadow: none;
   color: #AF9164;
   font-weight: bold;
 }
+
 .busnessType{
   font-size: 18px;
 }
