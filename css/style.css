@@ -412,7 +412,7 @@ box-shadow: none;
   background-color: #F7F3E3 !important;
 }
 .tab-content .card-header{
-  background-color: #F7F3E3 !important;
+  background-color: #F7F3E3;
   border: 3px solid #CFE4FF;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
 }
@@ -465,8 +465,9 @@ box-shadow: none;
   
 .btnSubmit{
   background-color: #E78C03;
-  color: white;
+  color: black;
   width: 250px;
+  font-weight: 600;
   border-radius: 20px;
   font-size: 18px;
 }
@@ -755,4 +756,13 @@ box-shadow: none;
   border: 1px solid #E78C03;
   background-color: white;
   box-shadow: none;
+}
+/* ============================================================ */
+.borderUpload{
+  border: 3px solid #DC1B1B !important;
+}
+.contactText{
+  color: #E78C03;
+  text-decoration: underline;
+  font-weight: bold;
 }
