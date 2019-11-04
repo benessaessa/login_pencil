@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
-    <title>238C898C-1F16-4F17-813F-38DBA471386E</title>
+<svg width="23px" height="28px" viewBox="0 0 23 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+    <title>B8D919AE-96BB-49C6-89C1-EA2B47A3E5DC</title>
     <desc>Created with sketchtool.</desc>
-    <g id="Foreign-Vendor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Company-Details" transform="translate(-1079.000000, -37.000000)" fill="#E78C03">
+    <g id="2.-Company-/-Bank-/-Branches" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Company-Details" transform="translate(-1073.000000, -33.000000)" fill="#FFFFFF">
             <g id="Navbar/home/login-Navbar/home/login/dropdown">
-                <g id="Group-6">
-                    <g id="notifications-none" transform="translate(1079.000000, 37.000000)">
-                        <path d="M8.5,20 C9.6,20 10.5,19.1 10.5,18 L6.5,18 C6.5,19.1 7.4,20 8.5,20 L8.5,20 Z M15,14 L15,8.5 C15,5.4 12.9,2.9 10,2.2 L10,1.5 C10,0.7 9.3,0 8.5,0 C7.7,0 7,0.7 7,1.5 L7,2.2 C4.1,2.9 2,5.4 2,8.5 L2,14 L0,16 L0,17 L17,17 L17,16 L15,14 L15,14 Z M13,15 L4,15 L4,8.5 C4,6 6,4 8.5,4 C11,4 13,6 13,8.5 L13,15 L13,15 Z" id="Shape"></path>
+                <g id="Navbar/home/login">
+                    <g id="Group-6">
+                        <g id="notifications-none" transform="translate(1073.000000, 33.000000)">
+                            <path d="M11.5,28 C12.9882353,28 14.2058824,26.74 14.2058824,25.2 L8.79411765,25.2 C8.79411765,26.74 10.0117647,28 11.5,28 L11.5,28 Z M20.2941176,19.6 L20.2941176,11.9 C20.2941176,7.56 17.4529412,4.06 13.5294118,3.08 L13.5294118,2.1 C13.5294118,0.98 12.5823529,0 11.5,0 C10.4176471,0 9.47058824,0.98 9.47058824,2.1 L9.47058824,3.08 C5.54705882,4.06 2.70588235,7.56 2.70588235,11.9 L2.70588235,19.6 L0,22.4 L0,23.8 L23,23.8 L23,22.4 L20.2941176,19.6 L20.2941176,19.6 Z M17.5882353,21 L5.41176471,21 L5.41176471,11.9 C5.41176471,8.4 8.11764706,5.6 11.5,5.6 C14.8823529,5.6 17.5882353,8.4 17.5882353,11.9 L17.5882353,21 L17.5882353,21 Z" id="Shape"></path>
+                        </g>
                     </g>
                 </g>
             </g>

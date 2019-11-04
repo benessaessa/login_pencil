@@ -1,133 +1,165 @@
-/* @font-face */
-/* @font-face {
-  font-family: "gellix-regular";
-  font-style: normal;
-  font-weight: normal;
-  src: url('../fonts/ArchivoNarrow-Regular.ttf');
-  src: local("ArchivoNarrow-Regular"), url("../fonts/ArchivoNarrow-Regular.ttf") format("ttf"),url(../fonts/ArchivoNarrow-BoldItalic.ttf) format(ttf),
-  url(../fonts/ArchivoNarrow-Bold.ttf) format(ttf);
-}
-body{
-  font-family: "ArchivoNarrow-Regular";
-} */
-
 /* ================ Page Login ======================= */
 header{
-  box-shadow: 1px 1px 1px 2px rgb(243, 231, 231);
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.1);
   padding: 15px;
 }
-.content h4{
-  font-weight: 600;
-  color: #000000;
-  font-size: 30px;
+
+body{
+  background-color: #FFFAF1;
 }
+
+.newText{
+  color: #323659;
+}
+
+.headerRegistration{
+  background-color: #323659;
+}
+
+.content h4 , .forgetPassword h4,.resetSection h4{
+  font-weight: bolder;
+  color: #000000;
+  font-size: 1.7rem;
+  letter-spacing: .05rem;
+}
+
 .content label,.formShadow label{
   font-size: 18px;
   margin-bottom: 3px;
   font-weight: 600;
 }
-  input::-webkit-input-placeholder {
+
+input::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 3;
 }
+
 .content .form-control{
   width: 90%;
   border: none;
   font-size: 14px;
   background-color: rgb(248, 240, 240);
-  height: 44px;
+  height: 51px;
 }
+
 .content .form-control:focus{
   border: 1px solid #E78C03;
   background-color: white;
   box-shadow: none;
 }
+
 .input-group .input-group-prepend .input-group-text{
   background-color: rgb(248, 240, 240);
 }
+
 .formLogIn .input-group{
   width: 90%;
 }
+
 .formRegistration .input-group{
   width: 80%;
 }
+
 .formLogIn .input-group .input-group-prepend .fa,.formShadow .fa{
   color: #E78C03;
 }
+
+.content{
+  background-color: #FFFAF1;
+}
+
 .content .password{
   width: 60% !important;
 }
+
 .login{
-  box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
+  box-shadow: 0 0 6px 0 rgba(3,3,3,0.1);
   padding: 15px;
+  background-color: white;
   border-radius: 10px;
 }
+
 .formRegistration .form-control{
   width: 80%;
+  height: 51px;
 }
+
 .login h3{
-  color: #000000;
   font-size: 30px;	font-weight: 500;
 }
+
 .login h6{
   font-size: 18px;
+  letter-spacing: .02rem;
   font-weight: bold;
 }
+
 .login h5{
   font-size: 18px;
   font-weight: 600;
 }
+
 .btnLogin{
   background-color: #E78C03;
-  color: white;
+  color: #323659;
   border-radius: 20px;
-  width: 50%;
-  font-size: 18px;
+  min-width: 50%;
+  font-size: 20px;
 }
+
 .btnEmail{
   background-color: #E78C03;
-  color: white;
+  color: #323659;
   border-radius: 20px;
   width: 285px;
   font-weight: 600;
   font-size: 18px;
 }
+
 .btnLogin:hover{
   color: #000000;
 }
+
 .forget{
   color: black;
   font-weight: 500;
 }
+
 .btnLogin2{
   background-color: #E78C03;
-  color: white;
+  color: #323659;
   border-radius: 20px;
-  width: 50%;
+  min-width: 50%;
   font-size: 18px;
 }
+
 .logPhoto{
   margin-top:12rem;
 }
+
 @media screen and (max-width:990px){
   .logPhoto{
     margin-top: 1rem;
   }
 }
-.logPhoto img,.logPhoto2 img{
+
+.logPhoto .imageLogin,.logPhoto2 .imageLogin{
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
+
 .logPhoto h3,.logPhoto2 h3{
   color: #000000;
   font-size: 25px;
   font-weight: bold;
 }
+
 .logPhoto p,.logPhoto2{
   font-size: 20px;
   color: black;
 }
+
 .check{
   display: block;
   position: relative;
@@ -197,28 +229,49 @@ header{
 footer .list-inline .list-inline-item a{
   color: white;
 }
-footer{
-  background-color: black;
+.main-header,footer{
+  background-color: #323659;
 }
 /* =========================================== page Forget Password ============== */
+.forgetPassword,.resetSection{
+  background-color: #FFFAF1;
+}
+
 .forgetSection p{
   font-size: 18px;
   font-weight: 500;
+  letter-spacing: .1rem;
 }
+
+.btnForget{
+  background-color: #E78C03;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
 .forgetSection h3{
   font-size: 30px;
 }
+
+.forgetSection{
+  background-color: #FFFFFF;
+}
+
 .forgetSection,.emailVerificate{
   box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
   padding: 15px 5px;
   border-radius: 10px;
 }
+
 .forgetSection label{
-  font-weight: 500;
+  font-weight: bold;
+  letter-spacing: .02rem;
   font-size: 17px;
 }
+
 .forgetSection .form-control{
   background-color: rgb(248, 240, 240);
+  height: 51px;
   border:none;
 }
 .forgetSection .form-control:focus{
@@ -231,6 +284,7 @@ footer{
   box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
   padding: 15px 5px;
   border-radius: 10px;
+  background-color: #FFFFFF;
 }
 .resetPassword p{
   font-size: 18px;
@@ -243,9 +297,13 @@ footer{
   font-size: 16px;
   font-weight: 500;
 }
+.resetPassword small{
+  font-weight: 500;
+}
 .resetPassword .form-control{
   background-color: rgb(248, 240, 240);
   border:none;
+  height: 51px;
 }
 .resetPassword .form-control:focus{
   border: 1px solid #E78C03 !important;
@@ -272,15 +330,15 @@ footer{
 }
 .bg-dangerr{
   background-color: #E78C03 !important;
-  color: white !important;
+  color: black !important;
 }
 .bg-dangerrr{
   background-color: #E78C03 !important;
-  color: white !important;
+  color: black !important;
 }
 .bg-successs{
   background-color: #E78C03 !important;
-  color: white !important;
+  color: black !important;
 }
 .registration p{
   font-size: 20px;
@@ -316,15 +374,17 @@ box-shadow: none;
   margin-left: auto;
   display: block;
 }
+
+.emailVerificate p{
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
+}
 /* ======================================== Page Details ====================== */
-.txtWorn {
+.txtWorn ,.txtSuccess{
   background-color:#CDEBF3;
   border-radius: 5px;
 }
-.txtSuccess{
-  border-radius: 5px;
-  background-color: #B4FFDB;
-}
+
 .txtReview{
   background-color: #FFDFB4;
   border-radius: 5px;
@@ -346,9 +406,23 @@ box-shadow: none;
 .tab-content h2{
   font-size: 30px;
 }
+.card-header{
+  border: 3px solid #CFE4FF;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+  background-color: #F7F3E3 !important;
+}
+.tab-content .card-header{
+  background-color: #F7F3E3 !important;
+  border: 3px solid #CFE4FF;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+}
+
+.pending{
+  color:#FF8900;
+}
 
 .tabButton .bg-dark{
-  background-color: #000000 !important;
+  background-color: #323659 !important;
   border-radius: 3px;
 }
 .tabButton .nav li a{
@@ -360,19 +434,25 @@ box-shadow: none;
   height: 100%;
 }
 .tabButton .nav li a:active{
-  background-color: #E78C03;
+  background-color: #FF8900;
+  color: black !important;
 }
 .tabButton .nav li a:visited{
   background-color: #E78C03;
+  color: #000000;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background-color: #E78C03;
+  color: #000000;
+  font-weight: bold;
 }
 .tabButton .nav li a:focus{
-  background-color: #E78C03;
+  background-color: #FF8900;
+  color: black !important;
 }
 .tabButton .nav li a:hover{
   background-color: #E78C03;
+  color: black;
 }
 @media screen and (max-width:600px){
   .details .tabButton .bg-dark .li{
@@ -454,8 +534,8 @@ box-shadow: none;
   }
 /* ========================================= Upload Documents ====== */
 .firstUploadCollapse .card-header h5{
-  color: #000000;
-  font-size: 20px;
+  color: #323659;
+  font-size: 1.4rem;
   font-weight: 700;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -472,11 +552,10 @@ box-shadow: none;
   box-shadow: 0 2px 20px 0 rgba(175,145,100,0.2);
 }
 .uploadDocuments .accordion{
-  border: 1px solid #4B4B4B;
   box-shadow: none;
 }
 .uploadDocuments .accordion .card-body{
-  background-color: rgba(0,0,0,.03);
+  background-color: #F7F3E3;
 }
 .uploadShow .bg-white p{
   color: #AF9164;
@@ -534,8 +613,7 @@ box-shadow: none;
 }
 .submitDataShow p{
   font-size: 20px;
-  color: #4B4B4B;
-  font-weight: 700;
+  color: #323659;
 }
 .submitData a{
   color: #4B4B4B;	
@@ -580,11 +658,12 @@ box-shadow: none;
   margin-right: 10%;
 }
 .vl{
+  margin-top: -5px;
   display: flex;
   margin-left: 25px;
   justify-content: center;
-  border-left: 1px solid black;
-  height: 120%;
+  border-left: .8px solid rgb(255, 255, 255);
+  height: 127%;
   min-height: 100%;
 }
 /* =================================== Account Details ================ */
@@ -613,7 +692,7 @@ box-shadow: none;
 }
 .compAdd p{
   font-size: 14px;
-  color: #AF9164;
+  color:#323659;
   font-weight: bold;
 }
 .txtWornDetails p{
@@ -633,6 +712,7 @@ box-shadow: none;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
   padding: 0.5rem;
+  font-size: 13px;
   transition: all 0.5s;
 }
 .drpDown .dropdown-menu .dropdown-item{
@@ -643,6 +723,7 @@ box-shadow: none;
 }
 .dropdown-menu {
   padding-bottom: 0px;
+  left: -60px;
   background-size: cover;
 }
 #notificationDropdownMenu {
