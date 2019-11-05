@@ -687,6 +687,7 @@ box-shadow: none;
 /* ========================================= Company Details View ====== */
 .compAdd label{
   font-size: 18px;
+  font-weight: bold;
 }
 .editDetails,.bankSave,.activitiesHide,.hideBran,.hideUpload,.showUploadDoc{
   display: none;
@@ -694,7 +695,7 @@ box-shadow: none;
 .compAdd p{
   font-size: 14px;
   color:#323659;
-  font-weight: bold;
+  font-weight: bold !important;
 }
 .txtWornDetails p{
   font-size: 16px;
@@ -765,4 +766,9 @@ box-shadow: none;
   color: #E78C03;
   text-decoration: underline;
   font-weight: bold;
+}
+.forgetEmail{
+  font-size: 12px;
+  color: #DC1B1B;
+  font-weight: 300;
 }
